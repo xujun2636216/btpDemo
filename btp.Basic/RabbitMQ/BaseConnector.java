@@ -18,6 +18,10 @@ public class BaseConnector {
             //打开连接和创建频道
             ConnectionFactory factory = new ConnectionFactory();
             factory.setHost("211.159.175.227");
+//            factory.setPort(15672);
+//            factory.setUsername("guest");
+//            factory.setPassword("guest");
+            //factory.setVirtualHost("vhostOne");
             //创建连接
             connection = factory.newConnection();
             //创建频道
@@ -29,4 +33,23 @@ public class BaseConnector {
         }
 
     }
+
+    /**
+     * 关闭channel和connection。并非必须，因为隐含是自动调用的。
+     *
+     * @throws IOException
+     */
+    public void close() {
+
+        try {
+            this.channel.close();
+            this.connection.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (TimeoutException e) {
+            e.printStackTrace();
+        }
+
+    }
+
 }
