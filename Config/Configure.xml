@@ -3,7 +3,7 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
     <typeAliases>
-        <typeAlias alias="User" type="btp.Code.btpEntity.User" />
+        <typeAlias alias="User" type="btpEntity.User" />
     </typeAliases>
 
     <environments default="development">
@@ -19,6 +19,6 @@
     </environments>
 
     <mappers>
-        <mapper resource="btp/Code/btpXml/User.xml" />
+        <mapper resource="btpXml/User.xml" />
     </mappers>
 </configuration>

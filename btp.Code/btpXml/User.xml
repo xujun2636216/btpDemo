@@ -2,11 +2,10 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="btp.BLL.IBLL.IUserBLL">
-
+<mapper namespace="IBLL.IUserBLL">
     <insert id="InsertUser" parameterType="User">
-        insert into User(name,dept, website,phone)
-        values(#{name}, #{dept}, #{website}, #{phone})
+        insert into User(id,name,dept, website,phone)
+        values(#{id},#{name}, #{dept}, #{website}, #{phone})
     </insert>
 
 </mapper>
