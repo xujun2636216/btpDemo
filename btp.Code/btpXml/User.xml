@@ -12,8 +12,24 @@
         select*from User
     </select>
 
-    <select id="GetUser" parameterType="int"  resultType="btpEntity.User">
+    <select id="GetUser" parameterType="int" resultType="btpEntity.User">
         select*from User where id=#{id}
     </select>
+
+    <update id="UpdateUser" parameterType="User">
+        update User
+        set  name=
+        #{name},
+        dept = #{dept},
+        website = #{website},
+        phone = #{phone}
+        where
+        id =
+        #{id}
+    </update>
+
+    <delete id="DeleteUser" parameterType="int">
+        delete from User where  id = #{id}
+    </delete>
 
 </mapper>

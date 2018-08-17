@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface IUserBLL {
     //@Select("select * from user where id= #{id}")
-    //public User getUserByID(int id);
+    // User getUserByID(int id);
 
     List<User> GetUserList();
 
@@ -14,7 +14,7 @@ public interface IUserBLL {
 
     void UpdateUser(User user);
 
-    void DeleteUser(int userId);
+    void DeleteUser(int id);
 
     User GetUser(int id);
 }

@@ -25,16 +25,33 @@ public class MybatisController {
 
     }
 
-
     /**
      * 查询数据
      */
     @Test
-    public void  Search() {
+    public void Search() {
 
-      List<User>  userlist= objbll.GetUserList();
+        List<User> userlist = objbll.GetUserList();
 
-      User user=objbll.GetUser(4);
+        User user = objbll.GetUser(4);
 
     }
+
+    /**
+     * 修改和更新
+     */
+    @Test
+    public void ModifyandDel() {
+
+        User user = objbll.GetUser(4);
+        user.setName("www");
+        user.setPhone("1223443545");
+        user.setWebsite("sdfsdf");
+
+        objbll.UpdateUser(user);
+
+        objbll.DeleteUser(6);
+    }
+
+
 }

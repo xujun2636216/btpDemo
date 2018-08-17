@@ -51,12 +51,25 @@ public class UserBLL implements IUserBLL {
 
     @Override
     public void UpdateUser(User user) {
-
+        try {
+            IUserBLL userMapper = session.getMapper(IUserBLL.class);
+            userMapper.UpdateUser(user);
+            session.commit();
+        } catch (Exception ex) {
+            LogHelper.Error(ex.getMessage(), ex);
+        }
     }
 
     @Override
-    public void DeleteUser(int userId) {
+    public void DeleteUser(int id) {
 
+        try {
+            IUserBLL userMapper = session.getMapper(IUserBLL.class);
+            userMapper.DeleteUser(id);
+            session.commit();
+        } catch (Exception ex) {
+            LogHelper.Error(ex.getMessage(), ex);
+        }
     }
 
     @Override
