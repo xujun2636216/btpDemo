@@ -13,7 +13,7 @@ public class UserBLL implements IUserBLL {
     private static SqlSession session = MybatisDBUtilsHelper.getSession().openSession();
 
     //创建 SingleObject 的一个对象
-    private static UserBLL instance = null;
+    private static  UserBLL instance = null;
 
     //获取唯一可用的对象
     public static UserBLL getInstance() {
