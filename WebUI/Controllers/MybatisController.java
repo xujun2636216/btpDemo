@@ -1,11 +1,14 @@
 package Controllers;
 
 import BLL.UserBLL;
+import btpEntity.Employee;
 import btpEntity.User;
 import org.apache.poi.hssf.record.UseSelFSRecord;
 import org.junit.Test;
 
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class MybatisController {
 
@@ -30,9 +33,11 @@ public class MybatisController {
      */
     @Test
     public void Search() {
-
+        int page=2;
+        int pageSize=5;
         List<User> userlist = objbll.GetUserList();
-
+        //分页技术
+        userlist=userlist.parallelStream().skip((page-1)*pageSize).collect(Collectors.toList());
         User user = objbll.GetUser(4);
 
     }
