@@ -6,6 +6,7 @@ import IBLL.IUserBLL;
 import btpEntity.User;
 import org.apache.ibatis.session.SqlSession;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class UserBLL implements IUserBLL {
@@ -13,7 +14,7 @@ public class UserBLL implements IUserBLL {
     private static SqlSession session = MybatisDBUtilsHelper.getSession().openSession();
 
     //创建 SingleObject 的一个对象
-    private static  UserBLL instance = null;
+    private static UserBLL instance = null;
 
     //获取唯一可用的对象
     public static UserBLL getInstance() {
@@ -23,24 +24,27 @@ public class UserBLL implements IUserBLL {
         return instance;
     }
 
-
     @Override
-    public  List<User> GetUserList() {
-        return null;
+    public List<User> GetUserList() {
+        List<User> userlist = new ArrayList<User>();
+        try {
+            IUserBLL userMapper = session.getMapper(IUserBLL.class);
+            userlist = userMapper.GetUserList();
+        } catch (Exception ex) {
+            LogHelper.Error(ex.getMessage(), ex);
+        }
+        return userlist;
     }
 
     @Override
     public void InsertUser(User user) {
         try {
 
-            // 获取Mapper
             IUserBLL userMapper = session.getMapper(IUserBLL.class);
-            // 执行插入
             userMapper.InsertUser(user);
-            // 提交事务
             session.commit();
         } catch (Exception ex) {
-                LogHelper.Error(ex.getMessage(), ex);
+            LogHelper.Error(ex.getMessage(), ex);
         }
 
     }
@@ -57,6 +61,13 @@ public class UserBLL implements IUserBLL {
 
     @Override
     public User GetUser(int id) {
-        return null;
+        User user = new User();
+        try {
+            IUserBLL userMapper = session.getMapper(IUserBLL.class);
+            user = userMapper.GetUser(id);
+        } catch (Exception ex) {
+            LogHelper.Error(ex.getMessage(), ex);
+        }
+        return user;
     }
 }
