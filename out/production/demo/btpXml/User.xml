@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="IBLL.IUserBLL">
+    <insert id="InsertUser" parameterType="btpEntity.User">
+        insert into User(id,name,dept, website,phone)
+        values(#{id},#{name}, #{dept}, #{website}, #{phone})
+    </insert>
+
+    <select id="GetUserList" resultType="btpEntity.User">
+        select*from User
+    </select>
+
+    <select id="GetUser" parameterType="int"  resultType="btpEntity.User">
+        select*from User where id=#{id}
+    </select>
+
+</mapper>
