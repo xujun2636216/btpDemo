@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.function.DoubleConsumer;
 
 public class RedisHelper {
 
@@ -327,5 +328,108 @@ public class RedisHelper {
         }
         return flag;
     }
+
+    /**
+     * redis加锁
+     *
+     * @return
+     */
+    public static Boolean LockOrder(int index, String HashId, String key) {
+        Boolean flag = false;
+        try {
+            if (isExistsHash(index, HashId, key) == true) {
+                flag = true;
+            } else {
+                flag = setHash(index, HashId, key, key);
+            }
+        } catch (Exception ex) {
+            LogHelper.Error(ex.getMessage(), ex);
+        }
+        return flag;
+    }
+
+
+    /**
+     * redis释放锁
+     *
+     * @return
+     */
+    public static Boolean UnLockOrder(int index, String HashId, String key) {
+        Boolean flag = false;
+        try {
+            flag = delHash(index, HashId, key);
+        } catch (Exception ex) {
+            LogHelper.Error(ex.getMessage(), ex);
+        }
+        return flag;
+    }
+
+
+    /**
+     * 数据库索引
+     *
+     * @param key
+     * @param value
+     * @return
+     */
+    public static Boolean Zset(int index, String key, Double Score, String value) {
+
+        Boolean flag = false;
+        Jedis jedis = RedisClient.getRedis(index);
+        try {
+            jedis.zadd(key, Score, value);
+            flag = true;
+        } catch (Exception ex) {
+            LogHelper.Error(ex.getMessage(), ex);
+        } finally {
+            jedis.close();
+        }
+        return flag;
+    }
+
+
+    /**
+     * @param index
+     * @param key
+     * @param Score
+     * @param value
+     * @param seconds 设置过期时间
+     * @return
+     */
+    public static Boolean Zset(int index, String key, Double Score, String value, int seconds) {
+
+        Boolean flag = false;
+        Jedis jedis = RedisClient.getRedis(index);
+        try {
+            jedis.zadd(key, Score, value);
+            jedis.expire(key, seconds);
+            flag = true;
+        } catch (Exception ex) {
+            LogHelper.Error(ex.getMessage(), ex);
+        } finally {
+            jedis.close();
+        }
+        return flag;
+    }
+
+
+    /**
+     * 数据库索引
+     *
+     * @param key 判断是否存在
+     */
+    public static Boolean isZsetExists(int index, String key) {
+        Boolean flag = false;
+        Jedis jedis = RedisClient.getRedis(index);
+        try {
+            flag = jedis.exists(key);
+        } catch (Exception ex) {
+            LogHelper.Error(ex.getMessage(), ex);
+        } finally {
+            jedis.close();
+        }
+        return flag;
+    }
+
 
 }
