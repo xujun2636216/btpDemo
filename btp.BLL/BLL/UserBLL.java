@@ -83,4 +83,16 @@ public class UserBLL implements IUserBLL {
         }
         return user;
     }
+
+    @Override
+    public List<User> GetAllUserList(User user) {
+        List<User> userlist = new ArrayList<User>();
+        try {
+            IUserBLL userMapper = session.getMapper(IUserBLL.class);
+            userlist = userMapper.GetAllUserList(user);
+        } catch (Exception ex) {
+            LogHelper.Error(ex.getMessage(), ex);
+        }
+        return userlist;
+    }
 }

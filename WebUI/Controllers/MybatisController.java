@@ -33,11 +33,11 @@ public class MybatisController {
      */
     @Test
     public void Search() {
-        int page=2;
-        int pageSize=5;
+        int page = 2;
+        int pageSize = 5;
         List<User> userlist = objbll.GetUserList();
         //分页技术
-        userlist=userlist.parallelStream().skip((page-1)*pageSize).collect(Collectors.toList());
+        userlist = userlist.parallelStream().skip((page - 1) * pageSize).collect(Collectors.toList());
         User user = objbll.GetUser(4);
 
     }
@@ -56,6 +56,17 @@ public class MybatisController {
         objbll.UpdateUser(user);
 
         objbll.DeleteUser(6);
+    }
+
+
+    /**
+     * 查询数据(记住一对多查询，多对对，一对一主表和字表的主键id不能相同)
+     */
+    @Test
+    public void Searchlist() {
+        User user = new User();
+        user.setPhone("1223443545");
+        List<User> userlist = objbll.GetAllUserList(user);
     }
 
 

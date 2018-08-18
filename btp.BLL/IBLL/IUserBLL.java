@@ -17,4 +17,6 @@ public interface IUserBLL {
     void DeleteUser(int id);
 
     User GetUser(int id);
+
+    List<User> GetAllUserList(User user);
 }

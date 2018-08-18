@@ -16,7 +16,7 @@
         select*from User where id=#{id}
     </select>
 
-    <update id="UpdateUser" parameterType="User">
+    <update id="UpdateUser" parameterType="btpEntity.User">
         update User
         set  name=
         #{name},
@@ -31,5 +31,60 @@
     <delete id="DeleteUser" parameterType="int">
         delete from User where  id = #{id}
     </delete>
+
+    <!--(方法1 1对多)-->
+    <resultMap type="User" id="resultUserMap">
+        <result property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="dept" column="dept"/>
+        <result property="phone" column="phone"/>
+        <result property="website" column="website"/>
+        <collection property="cores" ofType="btpEntity.Cores" column="userid">
+            <id property="id" column="cores_id"/>
+            <result property="userid" column="userid"/>
+            <result property="score" column="score"/>
+        </collection>
+    </resultMap>
+
+    <select id="GetAllUserList" resultMap="resultUserMap" parameterType="btpEntity.User">
+        select t1.*,t2.* from User t1 left join Cores t2
+        on t1.id=t2.userid
+        where 1=1
+        <if test="name !=null and name!='' ">
+            and t1.name like  CONCAT(CONCAT('%', #{name}),'%')
+
+        </if>
+        <if test="phone !=null and phone!='' ">
+            and t1.phone=#{phone}
+        </if>
+    </select>
+
+    <!-- 方法二-->
+    <!--<select id="GetAllUserList" resultMap="resultUserMap" parameterType="btpEntity.User">
+        select t1.* from User t1
+        where 1=1
+        <if test="name !=null and name!='' ">
+            and t1.name like '%'#{name}'%'
+        </if>
+        <if test="phone !=null and phone!='' ">
+            and t1.phone=#{phone}
+        </if>
+    </select>
+
+
+    <resultMap id="resultUserMap" type="btpEntity.User">
+        <result property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="dept" column="dept"/>
+        <result property="phone" column="phone"/>
+        <result property="website" column="website"/>
+        <collection property="cores" ofType="btpEntity.Cores" select="selectCores" column="userid">
+        </collection>
+    </resultMap>
+
+
+    <select id="select" resultType="btpEntity.Cores" parameterType="int">
+           select t2.* from Cores t2  where t2.userid=#{userid}
+    </select>-->
 
 </mapper>
