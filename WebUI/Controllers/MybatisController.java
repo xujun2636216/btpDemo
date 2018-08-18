@@ -1,12 +1,8 @@
 package Controllers;
 
 import BLL.UserBLL;
-import btpEntity.Employee;
 import btpEntity.User;
-import org.apache.poi.hssf.record.UseSelFSRecord;
 import org.junit.Test;
-
-import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -25,6 +21,7 @@ public class MybatisController {
         user.setWebsite("http://www.baidu.com");
         user.setPhone("13821637725");
         objbll.InsertUser(user);
+
 
     }
 
