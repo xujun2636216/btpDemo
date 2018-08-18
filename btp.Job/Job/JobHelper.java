@@ -3,7 +3,7 @@ package Job;
 import org.quartz.*;
 import org.quartz.impl.StdSchedulerFactory;
 
-public class JobTrigger  {
+public class JobHelper {
 
     public  static  void  JobStart() throws SchedulerException {
         SchedulerFactory factory = new StdSchedulerFactory();
@@ -30,7 +30,7 @@ public class JobTrigger  {
 
         Trigger trigger2 = TriggerBuilder
                 .newTrigger()
-                .withIdentity("dummyTriggerName1", "group1")
+                .withIdentity("dummyTriggerName2", "group1")
                 .withSchedule(
                         SimpleScheduleBuilder.simpleSchedule()
                                 .withIntervalInSeconds(5).repeatForever())
