@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="111058e0-084c-4b4c-b84a-4e52f0600b58" name="Default" comment="修改文件名">
-      <change afterPath="$PROJECT_DIR$/btp.Code/btpEntity/Cores.java" afterDir="false" />
+    <list default="true" id="111058e0-084c-4b4c-b84a-4e52f0600b58" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/Configure.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Config/Configure.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebUI/Controllers/MybatisController.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebUI/Controllers/MybatisController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/btp.BLL/BLL/UserBLL.java" beforeDir="false" afterPath="$PROJECT_DIR$/btp.BLL/BLL/UserBLL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/btp.BLL/IBLL/IUserBLL.java" beforeDir="false" afterPath="$PROJECT_DIR$/btp.BLL/IBLL/IUserBLL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/btp.Code/btpEntity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/btp.Code/btpEntity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/btp.Code/btpXml/User.xml" beforeDir="false" afterPath="$PROJECT_DIR$/btp.Code/btpXml/User.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,8 +17,8 @@
       <file leaf-file-name="MybatisController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WebUI/Controllers/MybatisController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="67" column="33" selection-start-line="67" selection-start-column="33" selection-end-line="67" selection-end-column="33" />
+            <state relative-caret-position="553">
+              <caret line="66" column="21" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#add#0;class#MybatisController#0" />
@@ -38,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/btp.Code/btpXml/User.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="51" column="17" lean-forward="true" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
+              <caret line="51" column="17" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -47,7 +40,7 @@
         <entry file="file://$PROJECT_DIR$/btp.BLL/IBLL/IUserBLL.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="304">
-              <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+              <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -122,7 +115,7 @@
         <entry file="file://$PROJECT_DIR$/Config/Configure.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+              <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -448,7 +441,7 @@
       <option name="presentableId" value="Default" />
       <updated>1534484348166</updated>
       <workItem from="1534484349397" duration="12568000" />
-      <workItem from="1534574591083" duration="11245000" />
+      <workItem from="1534574591083" duration="11587000" />
     </task>
     <task id="LOCAL-00001" summary="修改文件名">
       <created>1534484471165</created>
@@ -492,13 +485,17 @@
       <option name="project" value="LOCAL" />
       <updated>1534494865264</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="mybait的使用">
+      <created>1534586150491</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1534586150492</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MybatisController_Searchlist - 2018.08.18 at 17h 15m 34s.xml">
-      <configuration name="MybatisController.Searchlist" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MybatisController_Searchlist - 2018.08.18 at 17h 17m 52s.xml">
       <configuration name="MybatisController.Searchlist" configurationId="JUnit" />
     </history-entry>
@@ -526,12 +523,15 @@
     <history-entry file="MybatisController_Searchlist - 2018.08.18 at 17h 51m 52s.xml">
       <configuration name="MybatisController.Searchlist" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MybatisController_Searchlist - 2018.08.18 at 17h 53m 02s.xml">
+      <configuration name="MybatisController.Searchlist" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23813000" />
+    <option name="totallyTimeSpent" value="24155000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -574,34 +574,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="修改文件名" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改文件名" />
+    <MESSAGE value="mybait的使用" />
+    <option name="LAST_COMMIT_MESSAGE" value="mybait的使用" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/WebUI/Controllers/MybatisController.java</url>
-          <line>35</line>
-          <properties />
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/WebUI/Controllers/MybatisController.java</url>
-          <line>66</line>
-          <properties />
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/btp.BLL/BLL/UserBLL.java</url>
-          <line>93</line>
-          <properties />
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="17" />
+      <option name="time" value="18" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -898,14 +879,14 @@
     <entry file="file://$PROJECT_DIR$/Config/Configure.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/btp.BLL/IBLL/IUserBLL.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
-          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -991,14 +972,14 @@
     <entry file="file://$PROJECT_DIR$/btp.Code/btpXml/User.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="51" column="17" lean-forward="true" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
+          <caret line="51" column="17" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebUI/Controllers/MybatisController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="67" column="33" selection-start-line="67" selection-start-column="33" selection-end-line="67" selection-end-column="33" />
+        <state relative-caret-position="553">
+          <caret line="66" column="21" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#add#0;class#MybatisController#0" />
@@ -1023,7 +1004,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited />
           <splitter-proportions>
             <option name="proportions">
               <list>
