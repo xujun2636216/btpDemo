@@ -23,8 +23,7 @@ public class JobHelper {
                 .newTrigger()
                 .withIdentity("dummyTriggerName1", "group1")
                 .withSchedule(
-                        SimpleScheduleBuilder.simpleSchedule()
-                                .withIntervalInSeconds(20).repeatForever())
+                        CronScheduleBuilder.cronSchedule("0/5 * * * * ?"))
                 .build();
 
 
@@ -32,8 +31,7 @@ public class JobHelper {
                 .newTrigger()
                 .withIdentity("dummyTriggerName2", "group1")
                 .withSchedule(
-                        SimpleScheduleBuilder.simpleSchedule()
-                                .withIntervalInSeconds(5).repeatForever())
+                        CronScheduleBuilder.cronSchedule("0/5 * * * * ?"))
                 .build();
         scheduler.scheduleJob(jobA, trigger1);
         scheduler.scheduleJob(jobB, trigger2);
