@@ -3,7 +3,7 @@ package Job;
 import org.quartz.*;
 import org.quartz.impl.StdSchedulerFactory;
 
-public class JobHelper {
+public class BTPPreloadJob {
 
     public  static  void  JobStart() throws SchedulerException {
         SchedulerFactory factory = new StdSchedulerFactory();
