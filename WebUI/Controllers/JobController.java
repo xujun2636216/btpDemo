@@ -1,7 +1,7 @@
 package Controllers;
 
 import Common.LogHelper;
-import Job.BTPPreloadJob;
+import CommonJob.BTPPreloadJob;
 import org.quartz.SchedulerException;
 
 public class JobController {

@@ -1,4 +1,4 @@
-package Job;
+package CommonJob;
 
 import org.quartz.*;
 import org.quartz.impl.StdSchedulerFactory;

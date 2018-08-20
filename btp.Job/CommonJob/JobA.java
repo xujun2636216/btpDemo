@@ -1,4 +1,4 @@
-package Job;
+package CommonJob;
 
 import BLL.UserBLL;
 import Common.LogHelper;
