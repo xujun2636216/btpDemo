@@ -340,7 +340,7 @@ public class RedisHelper {
             if (isExistsHash(index, HashId, key) == true) {
                 flag = true;
             } else {
-                flag = setHash(index, HashId, key, key);
+                setHash(index, HashId, key, key);
             }
         } catch (Exception ex) {
             LogHelper.Error(ex.getMessage(), ex);
@@ -354,14 +354,14 @@ public class RedisHelper {
      *
      * @return
      */
-    public static Boolean UnLockOrder(int index, String HashId, String key) {
-        Boolean flag = false;
+    public static void UnLockOrder(int index, String HashId, String key) {
         try {
-            flag = delHash(index, HashId, key);
+            if (isExistsHash(index, HashId, key) == true) {
+                delHash(index, HashId, key);
+            }
         } catch (Exception ex) {
             LogHelper.Error(ex.getMessage(), ex);
         }
-        return flag;
     }
 
 
