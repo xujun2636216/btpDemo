@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="111058e0-084c-4b4c-b84a-4e52f0600b58" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Config/ehcache.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/ehcache.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Config/ehcache.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Config/hibernate.cfg.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -28,8 +27,8 @@
       <file leaf-file-name="hibernate.cfg.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Config/hibernate.cfg.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+            <state relative-caret-position="288">
+              <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -37,8 +36,8 @@
       <file leaf-file-name="ehcache.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Config/ehcache.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="3" column="10" lean-forward="true" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+            <state relative-caret-position="176">
+              <caret line="11" column="48" lean-forward="true" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -110,7 +109,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
     <option name="width" value="1401" />
@@ -127,6 +126,17 @@
             <path>
               <item name="btp" type="b2602c69:ProjectViewProjectNode" />
               <item name="btpDemo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="btp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="btpDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="btp.Code" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="btp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="btpDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="btp.Code" type="462c0819:PsiDirectoryNode" />
+              <item name="btpEntity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="btp" type="b2602c69:ProjectViewProjectNode" />
@@ -333,7 +343,7 @@
       <workItem from="1534574591083" duration="18730000" />
       <workItem from="1534648323320" duration="7524000" />
       <workItem from="1535162592863" duration="7066000" />
-      <workItem from="1535171217195" duration="9347000" />
+      <workItem from="1535171217195" duration="10238000" />
     </task>
     <task id="LOCAL-00001" summary="修改文件名">
       <created>1534484471165</created>
@@ -475,7 +485,14 @@
       <option name="project" value="LOCAL" />
       <updated>1535197813025</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="mybait的使用">
+      <created>1535198345290</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1535198345290</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -511,10 +528,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58537000" />
+    <option name="totallyTimeSpent" value="59428000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -1005,15 +1022,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Config/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+        <state relative-caret-position="288">
+          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Config/ehcache.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" column="10" lean-forward="true" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+        <state relative-caret-position="176">
+          <caret line="11" column="48" lean-forward="true" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
         </state>
       </provider>
     </entry>
