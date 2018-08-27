@@ -1,6 +1,7 @@
 package btpEntity;
 
-import java.util.Objects;
+import javax.persistence.Entity;
+
 
 public class Student {
     private  int id;

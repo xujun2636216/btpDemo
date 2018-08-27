@@ -8,8 +8,8 @@ import java.io.Reader;
 
 public class MybatisDBUtilsHelper {
 
-    private static SqlSessionFactory sqlSessionFactory;
-    private static Reader reader;
+    private static  SqlSessionFactory sqlSessionFactory;
+    private static  Reader reader;
 
     static {
         try {
