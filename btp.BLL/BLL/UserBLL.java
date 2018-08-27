@@ -32,6 +32,8 @@ public class UserBLL implements IUserBLL {
             userlist = userMapper.GetUserList();
         } catch (Exception ex) {
             LogHelper.Error(ex.getMessage(), ex);
+        } finally {
+            session.close();
         }
         return userlist;
     }
@@ -45,6 +47,8 @@ public class UserBLL implements IUserBLL {
             session.commit();
         } catch (Exception ex) {
             LogHelper.Error(ex.getMessage(), ex);
+        } finally {
+            session.close();
         }
 
     }
@@ -57,6 +61,8 @@ public class UserBLL implements IUserBLL {
             session.commit();
         } catch (Exception ex) {
             LogHelper.Error(ex.getMessage(), ex);
+        } finally {
+            session.close();
         }
     }
 
@@ -69,6 +75,8 @@ public class UserBLL implements IUserBLL {
             session.commit();
         } catch (Exception ex) {
             LogHelper.Error(ex.getMessage(), ex);
+        } finally {
+            session.close();
         }
     }
 
@@ -80,6 +88,8 @@ public class UserBLL implements IUserBLL {
             user = userMapper.GetUser(id);
         } catch (Exception ex) {
             LogHelper.Error(ex.getMessage(), ex);
+        } finally {
+            session.close();
         }
         return user;
     }
@@ -92,6 +102,8 @@ public class UserBLL implements IUserBLL {
             userlist = userMapper.GetAllUserList(user);
         } catch (Exception ex) {
             LogHelper.Error(ex.getMessage(), ex);
+        } finally {
+            session.close();
         }
         return userlist;
     }
