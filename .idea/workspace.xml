@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="111058e0-084c-4b4c-b84a-4e52f0600b58" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Config/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/btp.Code/btpEntity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/btp.Code/btpEntity/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/btp.DBUtility/DBUtility/HibernateHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/btp.DBUtility/DBUtility/HibernateHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/btp.DBUtility/DBUtility/MybatisDBUtilsHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/btp.DBUtility/DBUtility/MybatisDBUtilsHelper.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,7 +19,7 @@
         <entry file="file://$PROJECT_DIR$/btp.Job/CommonJob/JobB.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="437">
-              <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+              <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -33,8 +30,8 @@
       <file leaf-file-name="HibernateHelper.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/btp.DBUtility/DBUtility/HibernateHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="61" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
+            <state relative-caret-position="380">
+              <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1060#1061#0" expanded="true" />
@@ -47,8 +44,8 @@
       <file leaf-file-name="MybatisDBUtilsHelper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/btp.DBUtility/DBUtility/MybatisDBUtilsHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="56" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="56" />
+            <state relative-caret-position="228">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#629#630#0" expanded="true" />
@@ -62,7 +59,7 @@
         <entry file="file://$PROJECT_DIR$/btp.Code/btpEntity/Student.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -71,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/Config/hibernate.cfg.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="380">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
@@ -80,7 +77,7 @@
         <entry file="file://$PROJECT_DIR$/btp.Code/btpEntity/User.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="128">
-              <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -185,6 +182,11 @@
               <item name="btpDemo" type="462c0819:PsiDirectoryNode" />
               <item name="btp.DBUtility" type="462c0819:PsiDirectoryNode" />
               <item name="DBUtility" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="btp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="btpDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="Config" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -375,7 +377,7 @@
       <workItem from="1535162592863" duration="7066000" />
       <workItem from="1535171217195" duration="10238000" />
       <workItem from="1535293139755" duration="4728000" />
-      <workItem from="1535346958075" duration="7118000" />
+      <workItem from="1535346958075" duration="7251000" />
     </task>
     <task id="LOCAL-00001" summary="修改文件名">
       <created>1534484471165</created>
@@ -538,7 +540,14 @@
       <option name="project" value="LOCAL" />
       <updated>1535356382743</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="mybait的使用">
+      <created>1535358271134</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1535358271134</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -574,7 +583,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71274000" />
+    <option name="totallyTimeSpent" value="71407000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -582,6 +591,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32720104" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -603,7 +613,6 @@
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.13036565" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32750398" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.13769363" />
@@ -928,6 +937,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="77" column="35" selection-start-line="77" selection-start-column="35" selection-end-line="77" selection-end-column="35" />
+          <folding>
+            <element signature="e#661#662#0" expanded="true" />
+            <element signature="e#705#706#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1004,7 +1017,7 @@
     <entry file="file://$PROJECT_DIR$/btp.Job/CommonJob/JobB.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
-          <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1014,7 +1027,7 @@
     <entry file="file://$PROJECT_DIR$/btp.Code/btpEntity/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
-          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1024,21 +1037,21 @@
     <entry file="file://$PROJECT_DIR$/btp.Code/btpEntity/Student.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Config/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/btp.DBUtility/DBUtility/MybatisDBUtilsHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="56" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="56" />
+        <state relative-caret-position="228">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#629#630#0" expanded="true" />
@@ -1049,8 +1062,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/btp.DBUtility/DBUtility/HibernateHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="61" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
+        <state relative-caret-position="380">
+          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1060#1061#0" expanded="true" />

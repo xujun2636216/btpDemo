@@ -21,7 +21,6 @@ public class HibernateHelper {
         }
     }
 
-
     public static Session getSession() {
         return sqlSessionFactory;
     }
