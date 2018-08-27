@@ -8,6 +8,14 @@ public  class ResultDTO {
 
     private String msg ;
 
+    public ResultDTO() {}
+
+    public ResultDTO(boolean isSuccess, int resultCode, String msg) {
+        this.isSuccess = isSuccess;
+        this.resultCode = resultCode;
+        this.msg = msg;
+    }
+
     public boolean isSuccess() {
         return isSuccess;
     }
