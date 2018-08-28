@@ -1,5 +1,6 @@
 package DBUtility;
 
+import Common.LogHelper;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.MetadataSources;
@@ -8,7 +9,7 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
 public class HibernateHelper {
 
-    private static final StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure("hibernate.cfg.xml").build();
+   private static final StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure("hibernate.cfg.xml").build();
     private static Session sqlSessionFactory;
 
     static {
@@ -17,7 +18,7 @@ public class HibernateHelper {
                     .buildMetadata().buildSessionFactory();
             sqlSessionFactory = sessionFactory.openSession();
         } catch (Exception e) {
-            e.printStackTrace();
+            LogHelper.Error(e.getMessage(),e);
         }
     }
 

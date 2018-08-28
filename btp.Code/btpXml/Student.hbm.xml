@@ -1,20 +1,17 @@
-<?xml version="1.0"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE hibernate-mapping PUBLIC
         "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
-        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 
-<!--
-    用于映射UsersEntity实体类,对应数据库中users表
--->
-<hibernate-mapping package="btpXml">
+
+<hibernate-mapping>
+
     <class name="btpEntity.Student" table="Student">
-        <!--属性id,映射表里的字段id-->
-        <id name="id" column="id">
-            <!--id的自增长方式采用数据库的本地方式-->
-            <generator class="native"></generator>
+        <id name="id" column="id" type="int">
+            <generator class="assigned" />
         </id>
-        <property name="age" />
-        <property name="name" />
+        <property name="age" column="age" type="int"></property>
+        <property name="name" column="name" type="java.lang.String"></property>
     </class>
 
 </hibernate-mapping>

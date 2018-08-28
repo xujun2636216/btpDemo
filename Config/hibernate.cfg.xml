@@ -7,19 +7,17 @@
 <hibernate-configuration>
 
     <session-factory>
-
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="connection.url">jdbc:mysql://211.159.175.227:3306/btp?characterEncoding=utf-8</property>
         <property name="connection.username">root</property>
         <property name="connection.password">123456</property>
         <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
-        <property name="current_session_context_class">thread</property>
-        <property name="show_sql">true</property>
-        <!--<property name="cache.provider_class">org.hibernate.cache.EhCacheProvider</property>-->
+        <property name="Connection.useUnicode">true </property>
         <property name="hibernate.cache.use_second_level_cache">true</property>
-
+        <property name="hibernate.format_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">create</property>
+        <property name="hibernate.show_sql">true</property>
         <mapping resource="btpXml/Student.hbm.xml"/>
-
     </session-factory>
 
 </hibernate-configuration>
