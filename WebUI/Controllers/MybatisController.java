@@ -1,8 +1,13 @@
 package Controllers;
 
 import BLL.UserBLL;
+import Common.ExecHelper;
 import btpEntity.User;
 import org.junit.Test;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -64,6 +69,23 @@ public class MybatisController {
         User user = new User();
         user.setPhone("1223443545");
         List<User> userlist = objbll.GetAllUserList(user);
+    }
+
+
+    /**
+     * 导出excel
+     */
+    @Test
+    public void DownExcel() {
+
+        List<User> userlist = objbll.GetUserList();
+        String[] arr = userlist.toArray(new String[userlist.size()]);
+        try {
+            ExecHelper.exec(arr);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 
 
