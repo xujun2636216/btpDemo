@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="111058e0-084c-4b4c-b84a-4e52f0600b58" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/javax.activation-1.2.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jaxb-api-2.3.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jaxb-core-2.3.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jaxb-impl-2.3.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Config/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/hibernate.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Config/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/btp.DBUtility/DBUtility/HibernateHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/btp.DBUtility/DBUtility/HibernateHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/demo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jaxb-api-2.3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jaxb-core-2.3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jaxb-impl-2.3.0.jar" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,15 +18,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Dom4jHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/btp.Basic/Common/Dom4jHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="42" column="7" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ExcelUtils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/btp.Basic/Common/ExcelUtils.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -102,6 +88,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="demo.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Config/log4j.properties">
           <provider selected="true" editor-type-id="text-editor">
@@ -149,6 +144,7 @@
     <findStrings>
       <find>u</find>
       <find>workbook.close();</find>
+      <find>javax.xml.bind</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -227,38 +223,6 @@
               <item name="btp" type="b2602c69:ProjectViewProjectNode" />
               <item name="btpDemo" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="btp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="btpDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="btp.DBUtility" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="btp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="btpDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="btp.DBUtility" type="462c0819:PsiDirectoryNode" />
-              <item name="DBUtility" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="btp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="btpDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="Config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="btp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="btpDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="btp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="btpDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="WebUI" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="btp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="btpDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="WebUI" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -271,7 +235,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/jaxb-impl-2.3.0.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/tika-app-1.1.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -465,7 +429,7 @@
       <workItem from="1535293139755" duration="4728000" />
       <workItem from="1535346958075" duration="17028000" />
       <workItem from="1535425314642" duration="12215000" />
-      <workItem from="1535538400428" duration="3267000" />
+      <workItem from="1535538400428" duration="3856000" />
     </task>
     <task id="LOCAL-00001" summary="修改文件名">
       <created>1534484471165</created>
@@ -677,16 +641,17 @@
       <option name="project" value="LOCAL" />
       <updated>1535447876106</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="mybait的使用">
+      <created>1535541888468</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1535541888468</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HibernateController_Search - 2018.08.28 at 15h 13m 34s.xml">
-      <configuration name="HibernateController.Search" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MybatisController_DownExcel - 2018.08.28 at 18h 15m 04s.xml">
-      <configuration name="MybatisController.DownExcel" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="HibernateController_Search - 2018.08.29 at 18h 28m 32s.xml">
       <configuration name="HibernateController.Search" configurationId="JUnit" />
     </history-entry>
@@ -711,9 +676,15 @@
     <history-entry file="HibernateController_Search - 2018.08.29 at 19h 17m 31s.xml">
       <configuration name="HibernateController.Search" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="HibernateController_Search - 2018.08.29 at 19h 24m 18s.xml">
+      <configuration name="HibernateController.Search" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HibernateController_Search - 2018.08.29 at 19h 24m 31s.xml">
+      <configuration name="HibernateController.Search" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96666000" />
+    <option name="totallyTimeSpent" value="97255000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -732,7 +703,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24861111" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24861111" />
       <window_info anchor="bottom" id="Tail" order="11" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info id="Learn" order="6" />
@@ -741,7 +712,7 @@
       <window_info id="UI Designer" order="3" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.35348225" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.35348225" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -863,13 +834,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/btp.Basic/Common/StringHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="585" column="27" selection-start-line="585" selection-start-column="27" selection-end-line="585" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/btp.Basic/Common/URLHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
@@ -1251,6 +1215,13 @@
             <element signature="e#284#285#0" expanded="true" />
             <element signature="e#344#345#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
         </state>
       </provider>
     </entry>
