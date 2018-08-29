@@ -3,25 +3,23 @@ package DBUtility;
 import Common.LogHelper;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.boot.MetadataSources;
-import org.hibernate.boot.registry.StandardServiceRegistry;
-import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.hibernate.cfg.Configuration;
 
 public class HibernateHelper {
-    private  static final StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure("hibernate.cfg.xml").build();
-    private static Session sqlSessionFactory;
+
+    //1. 创建一个SessionFactory对象
+    private static SessionFactory sessionFactory = null;
 
     static {
         try {
-            SessionFactory sessionFactory = new MetadataSources(registry)
-                    .buildMetadata().buildSessionFactory();
-            sqlSessionFactory = sessionFactory.openSession();
+            Configuration configuration = new Configuration().configure();
+            sessionFactory = configuration.buildSessionFactory();
         } catch (Exception e) {
-            LogHelper.Error(e.getMessage(),e);
+            LogHelper.Error(e.getMessage(), e);
         }
     }
 
     public static Session getSession() {
-        return sqlSessionFactory;
+        return (Session) sessionFactory;
     }
 }
