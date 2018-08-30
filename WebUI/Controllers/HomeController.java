@@ -1,6 +1,7 @@
 package Controllers;
 
 import BLL.PeopleBLL;
+import IBLL.IPeopleBLL;
 import btpEntity.People;
 import net.sf.json.JSONArray;
 import org.junit.Test;
@@ -11,7 +12,14 @@ import java.util.Map;
 
 public class HomeController {
 
+    private static IPeopleBLL  _I_PEOPLE_BLL = null;
 
+    private HomeController(IPeopleBLL I_PEOPLE_BLL){
+        this._I_PEOPLE_BLL=I_PEOPLE_BLL;
+    }
+
+
+    private static PeopleBLL  PeopleBLL = null;
     /**
      * 主函数
      */
@@ -29,10 +37,10 @@ public class HomeController {
         System.out.print("\n");
 
         //第二种循环方式
-        objlist.forEach(p->{
+        objlist.forEach(p -> {
             System.out.printf("姓名为：%s 年龄为：%d", p.getName(), p.getAge());
         });
-        objlist.forEach(p->System.out.printf("姓名为：%s 年龄为：%d", p.getName(), p.getAge()));
+        objlist.forEach(p -> System.out.printf("姓名为：%s 年龄为：%d", p.getName(), p.getAge()));
 
         System.out.print("\n");
 

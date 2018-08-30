@@ -9,13 +9,16 @@ import java.util.Map;
 public  class PeopleBLL implements IPeopleBLL {
 
     //创建 SingleObject 的一个对象
-    private static PeopleBLL instance = new PeopleBLL();
+    private static PeopleBLL instance;
 
     //让构造函数为 private，这样该类就不会被实例化
     private PeopleBLL(){}
 
     //获取唯一可用的对象
     public static PeopleBLL getInstance(){
+        if (instance==null) {
+            instance=new PeopleBLL();
+        }
         return instance;
     }
 

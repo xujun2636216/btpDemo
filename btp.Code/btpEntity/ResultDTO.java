@@ -1,6 +1,7 @@
 package btpEntity;
 
-public  class ResultDTO {
+
+public  class  ResultDTO {
 
     private   boolean isSuccess ;
 
@@ -40,7 +41,6 @@ public  class ResultDTO {
         this.msg = msg;
     }
 
-
-
-
 }
+
+
