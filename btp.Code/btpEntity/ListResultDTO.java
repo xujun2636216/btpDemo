@@ -14,9 +14,6 @@ public class ListResultDTO<T> extends ResultDTO {
     public ListResultDTO(boolean isSuccess, int resultCode, String msg, int count, List<T> datalist) {
         super(isSuccess, resultCode, msg);
         this.count = count;
-
-
-
         this.datalist = datalist;
     }
 
