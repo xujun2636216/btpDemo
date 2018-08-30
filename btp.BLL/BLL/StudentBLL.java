@@ -77,8 +77,9 @@ public abstract class StudentBLL {
 
     /**
      * @删除学生
+     * @param model
      */
-    public static ResultDTO DelStudent() {
+    public static ResultDTO DelStudent(Student model) {
 
         ResultDTO result = null;
         int count = 0;
@@ -195,7 +196,7 @@ public abstract class StudentBLL {
             studentList = DBUtilsHelper.BeanListHandler(sb.toString(), null, Student.class);
             result=new ListResultDTO(true,0,"",studentList.size(),studentList);
         } catch (Exception e) {
-            result=null;
+            result=new ListResultDTO(false,0,"",0,null);;
         }
         return result;
     }

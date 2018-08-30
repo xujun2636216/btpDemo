@@ -35,8 +35,5 @@ public class StudentController {
         ResultDTO result=StudentBLL.UpdateStudent();
     }
 
-    @Test
-    public  void  Del() {
-        ResultDTO result=StudentBLL.DelStudent();
-    }
+
 }

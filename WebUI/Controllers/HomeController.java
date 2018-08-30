@@ -12,6 +12,7 @@ import java.util.Map;
 
 public class HomeController {
 
+    //第一种方式
     private static IPeopleBLL  _I_PEOPLE_BLL = null;
 
     private HomeController(IPeopleBLL I_PEOPLE_BLL){
@@ -19,14 +20,14 @@ public class HomeController {
     }
 
 
-    private static PeopleBLL  PeopleBLL = null;
+    //第二种方式
+    private static PeopleBLL  objbll = PeopleBLL.getInstance();
     /**
      * 主函数
      */
     public static void main(String[] args) {
 
-        //使用单例模式创建与BLL的连接
-        PeopleBLL objbll = PeopleBLL.getInstance();
+
         List<People> objlist = objbll.getlist();
 
         //第一种循环方式
@@ -65,7 +66,6 @@ public class HomeController {
     public void getobjlist() {
 
         //使用单例模式创建与BLL的连接
-        PeopleBLL objbll = PeopleBLL.getInstance();
         Map<String, People> objlist = objbll.getPeoplelist();
 
 

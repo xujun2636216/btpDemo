@@ -1,6 +1,7 @@
 package Controllers;
 
 import BLL.StudentBLL;
+import btpEntity.ListResultDTO;
 import btpEntity.ResultDTO;
 import btpEntity.Student;
 import org.junit.Test;
@@ -36,7 +37,7 @@ public class DBUtilsController {
         ResultDTO result = null;
         Student model = new Student();
         model.setId(4);
-        result = StudentBLL.Del(model);
+        result = StudentBLL.DelStudent(model);
 
     }
 
@@ -48,7 +49,7 @@ public class DBUtilsController {
 
     @Test
     public void SearchBeanListHandler() {
-        List<Student> studentlist = null;
+        ListResultDTO<Student> studentlist=null;
         studentlist = StudentBLL.BeanListHandler();
     }
 
