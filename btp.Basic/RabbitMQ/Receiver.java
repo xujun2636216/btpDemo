@@ -1,15 +1,16 @@
 package RabbitMQ;
 
-import com.rabbitmq.client.BasicProperties;
-import com.rabbitmq.client.Envelope;
-import com.rabbitmq.client.ShutdownSignalException;
+import java.io.IOException;
+
 import com.sun.nio.sctp.MessageInfo;
 import org.apache.commons.lang.SerializationUtils;
+import com.rabbitmq.client.AMQP.BasicProperties;
+import com.rabbitmq.client.Envelope;
+import com.rabbitmq.client.Consumer;
+import com.rabbitmq.client.ShutdownSignalException;
 
-import java.io.IOException;
-import java.util.function.Consumer;
 
-public class Receiver extends BaseConnector implements Runnable, Consumer {
+public class Receiver extends BaseConnector implements Runnable,Consumer {
 
 
     public Receiver(String queueName) throws IOException {
@@ -20,7 +21,7 @@ public class Receiver extends BaseConnector implements Runnable, Consumer {
     public void run() {
 
         try {
-            channel.basicConsume(queueName, true, (com.rabbitmq.client.Consumer) this);
+            channel.basicConsume(queueName, true, this);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -54,8 +55,5 @@ public class Receiver extends BaseConnector implements Runnable, Consumer {
     }
 
 
-    @Override
-    public void accept(Object o) {
 
-    }
 }

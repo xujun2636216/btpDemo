@@ -18,9 +18,9 @@ public class BaseConnector {
             //打开连接和创建频道
             ConnectionFactory factory = new ConnectionFactory();
             factory.setHost("211.159.175.227");
-//            factory.setPort(15672);
-//            factory.setUsername("guest");
-//            factory.setPassword("guest");
+            //factory.setUsername("root");
+            //factory.setPassword("123456");
+            //factory.setPort(15672);
             //factory.setVirtualHost("vhostOne");
             //创建连接
             connection = factory.newConnection();
