@@ -37,7 +37,7 @@ public class Receiver extends BaseConnector implements Runnable,Consumer {
 
     //当消费者接收到消息会自动调用
     public void handleDelivery(String consumerTag, Envelope env, BasicProperties props, byte[] body) throws IOException {
-        MessageInfo messageInfo = (MessageInfo) SerializationUtils.deserialize(body);
+         MessageInfo messageInfo = (MessageInfo) SerializationUtils.deserialize(body);
 
     }
 
