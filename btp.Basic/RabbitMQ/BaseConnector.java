@@ -27,7 +27,7 @@ public class BaseConnector {
             //创建频道
             channel = connection.createChannel();
             //声明创建队列
-            channel.queueDeclare(queueName, false, false, false, null);
+            channel.queueDeclare(queueName, true, false, false, null);
         } catch (TimeoutException e) {
             e.printStackTrace();
         }
