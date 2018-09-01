@@ -1,6 +1,7 @@
 package BLL;
 
 import Common.LogHelper;
+import DBUtility.HibernateHelper;
 import DBUtility.HibernateUtils;
 import btpEntity.ResultDTO;
 import btpEntity.Student;
@@ -12,7 +13,7 @@ import java.util.List;
 public class StudentsBLL {
 
     // 获取Session连接
-    private static final Session session = HibernateUtils.getSession();
+    private static final Session session = HibernateHelper.getSession();
 
     //创建 SingleObject 的一个对象
     private static StudentsBLL instance = null;
@@ -29,7 +30,7 @@ public class StudentsBLL {
         session.beginTransaction();
         List<Student> objlist = new ArrayList<Student>();
         try {
-            Query query = session.createQuery("from Student");
+            Query query = session.createQuery("");
             objlist = query.list();
         } catch (Exception ex) {
             LogHelper.Error(ex.getMessage(), ex);

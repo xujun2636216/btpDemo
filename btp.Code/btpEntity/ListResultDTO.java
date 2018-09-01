@@ -17,7 +17,6 @@ public class ListResultDTO<T> extends ResultDTO {
         this.datalist = datalist;
     }
 
-
     public int getCount() {
         return count;
     }

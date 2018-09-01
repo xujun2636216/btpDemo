@@ -13,8 +13,8 @@ public class HibernateHelper {
         try {
             Configuration configuration = new Configuration().configure();
             sessionFactory = configuration.buildSessionFactory();
-        } catch (Exception e) {
-            LogHelper.Error(e.getMessage(), e);
+        } catch (Exception ex) {
+            LogHelper.Error(ex.getMessage(), ex);
         }
     }
 

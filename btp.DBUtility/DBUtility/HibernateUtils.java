@@ -17,8 +17,8 @@ public class HibernateUtils {
             StandardServiceRegistry standardRegistry = new StandardServiceRegistryBuilder().configure("hibernate.cfg.xml").build();
             Metadata metaData = new MetadataSources(standardRegistry).getMetadataBuilder().build();
             sessionFactory = metaData.getSessionFactoryBuilder().build();
-        } catch (Exception e) {
-            LogHelper.Error(e.getMessage(), e);
+        } catch (Exception ex) {
+            LogHelper.Error(ex.getMessage(), ex);
         }
     }
 
