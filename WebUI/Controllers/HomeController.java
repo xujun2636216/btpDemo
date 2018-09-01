@@ -12,13 +12,6 @@ import java.util.Map;
 
 public class HomeController {
 
-    //第一种方式
-    private static IPeopleBLL  _I_PEOPLE_BLL = null;
-
-    private HomeController(IPeopleBLL I_PEOPLE_BLL){
-        this._I_PEOPLE_BLL=I_PEOPLE_BLL;
-    }
-
 
     //第二种方式
     private static PeopleBLL  objbll = PeopleBLL.getInstance();
