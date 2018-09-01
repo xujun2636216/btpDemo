@@ -29,7 +29,9 @@ public class StudentsBLL {
         session.beginTransaction();
         List<Student> objlist = new ArrayList<Student>();
         try {
-            Query query = session.createQuery("");
+            StringBuilder sql=new StringBuilder();
+            sql.append("select*from Student");
+            Query query = session.createQuery(sql.toString());
             objlist = query.list();
         } catch (Exception ex) {
             LogHelper.Error(ex.getMessage(), ex);
