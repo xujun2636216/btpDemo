@@ -1,7 +1,6 @@
 package BLL;
 
 import Common.LogHelper;
-import DBUtility.HibernateHelper;
 import DBUtility.HibernateUtils;
 import btpEntity.ResultDTO;
 import btpEntity.Student;
@@ -13,7 +12,7 @@ import java.util.List;
 public class StudentsBLL {
 
     // 获取Session连接
-    private static final Session session = HibernateHelper.getSession();
+    private static final Session session = HibernateUtils.getSession();
 
     //创建 SingleObject 的一个对象
     private static StudentsBLL instance = null;

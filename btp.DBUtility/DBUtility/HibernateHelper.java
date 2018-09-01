@@ -11,7 +11,7 @@ public class HibernateHelper {
 
     static {
         try {
-            Configuration configuration = new Configuration().configure();
+            Configuration configuration = new Configuration().configure("hibernate.cfg.xml");
             sessionFactory = configuration.buildSessionFactory();
         } catch (Exception ex) {
             LogHelper.Error(ex.getMessage(), ex);
