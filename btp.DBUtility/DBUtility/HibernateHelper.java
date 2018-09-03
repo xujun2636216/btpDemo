@@ -19,6 +19,6 @@ public class HibernateHelper {
     }
 
     public static Session getSession() {
-        return (Session) sessionFactory;
+        return (Session) sessionFactory.openSession();
     }
 }

@@ -15,6 +15,7 @@ public class HibernateController {
     @Test
     public void Search() {
         List<Student> studentList = StudentsBLL.getList();
+
     }
 
 }

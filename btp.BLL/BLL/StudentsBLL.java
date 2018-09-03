@@ -6,6 +6,7 @@ import btpEntity.ResultDTO;
 import btpEntity.Student;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,10 +19,8 @@ public class StudentsBLL {
         session.beginTransaction();
         List<Student> objlist = new ArrayList<Student>();
         try {
-            StringBuilder sql=new StringBuilder();
-            sql.append("select*from Student");
-            Query query = session.createQuery(sql.toString());
-            objlist = query.list();
+            String hql="from Student t";
+            objlist = session.createQuery(hql.toString()).list();
         } catch (Exception ex) {
             LogHelper.Error(ex.getMessage(), ex);
         } finally {
