@@ -14,17 +14,6 @@ public class StudentsBLL {
     // 获取Session连接
     private static final Session session = HibernateUtils.getSession();
 
-    //创建 SingleObject 的一个对象
-    private static StudentsBLL instance = null;
-
-    //获取唯一可用的对象
-    public static StudentsBLL getInstance() {
-        if (instance == null) {
-            instance = new StudentsBLL();
-        }
-        return instance;
-    }
-
     public static List<Student> getList() {
         session.beginTransaction();
         List<Student> objlist = new ArrayList<Student>();
