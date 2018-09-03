@@ -769,8 +769,9 @@ public class FileHelper {
                 path1 = st.nextToken() + "/";  
                 path2 += path1;  
                 File inbox = new File(path2);  
-                if (!inbox.exists())  
-                    inbox.mkdir();  
+                if (!inbox.exists()) {
+                    inbox.mkdir();
+                }
   
             }  
         } catch (Exception e) {  
@@ -792,8 +793,9 @@ public class FileHelper {
         } else {  
             File path = new File(dirpath);  
             try {  
-                if (!path.exists())  
-                    return;// 目录不存在退出  
+                if (!path.exists()) {
+                    return;// 目录不存在退出
+                }
                 if (path.isFile()) // 如果是文件删除  
                 {  
                     path.delete();  
@@ -850,8 +852,9 @@ public class FileHelper {
      */  
     public static boolean deleteDir(String path) throws Exception {  
         File file = new File(path);  
-        if (!file.exists())  
-            return false;// 目录不存在退出  
+        if (!file.exists()) {
+            return false;// 目录不存在退出
+        }
         if (file.isFile()) // 如果是文件删除  
         {  
             file.delete();  

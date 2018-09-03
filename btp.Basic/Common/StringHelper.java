@@ -550,8 +550,9 @@ public final class StringHelper {
 	 */
 	public static boolean isNotBlank(String str) {
 		int strLen = 0;
-		if (str != null)
-			strLen = str.length();
+		if (str != null) {
+            strLen = str.length();
+        }
 		if (str == null || strLen == 0) {
 			return false;
 		}
@@ -1418,13 +1419,16 @@ public final class StringHelper {
 	 *         <pre>
 	 */
 	public static final String replaceAllStr(String strSrc, String strOld, String strNew) {
-		if (strSrc == null || strOld == null || strNew == null)
-			return "";
+		if (strSrc == null || strOld == null || strNew == null) {
+            return "";
+        }
 
 		int i = 0;
 
 		if (strOld.equals(strNew)) // 避免新旧字符一样产生死循环
-			return strSrc;
+        {
+            return strSrc;
+        }
 
 		if ((i = strSrc.indexOf(strOld, i)) >= 0) {
 			char[] arr_cSrc = strSrc.toCharArray();
@@ -1462,8 +1466,9 @@ public final class StringHelper {
 	 */
 
 	public static String htmlEncode(String strSrc) {
-		if (strSrc == null)
-			return "";
+		if (strSrc == null) {
+            return "";
+        }
 
 		char[] arr_cSrc = strSrc.toCharArray();
 		StringBuffer buf = new StringBuffer(arr_cSrc.length);
@@ -1472,18 +1477,19 @@ public final class StringHelper {
 		for (int i = 0; i < arr_cSrc.length; i++) {
 			ch = arr_cSrc[i];
 
-			if (ch == '<')
-				buf.append("&lt;");
-			else if (ch == '>')
-				buf.append("&gt;");
-			else if (ch == '"')
-				buf.append("&quot;");
-			else if (ch == '\'')
-				buf.append("&#039;");
-			else if (ch == '&')
-				buf.append("&amp;");
-			else
-				buf.append(ch);
+			if (ch == '<') {
+                buf.append("&lt;");
+            } else if (ch == '>') {
+                buf.append("&gt;");
+            } else if (ch == '"') {
+                buf.append("&quot;");
+            } else if (ch == '\'') {
+                buf.append("&#039;");
+            } else if (ch == '&') {
+                buf.append("&amp;");
+            } else {
+                buf.append(ch);
+            }
 		}
 
 		return buf.toString();
@@ -1502,8 +1508,9 @@ public final class StringHelper {
 	 */
 	public static String htmlEncode(String strSrc, int quotes) {
 
-		if (strSrc == null)
-			return "";
+		if (strSrc == null) {
+            return "";
+        }
 		if (quotes == 0) {
 			return htmlEncode(strSrc);
 		}
@@ -1514,18 +1521,19 @@ public final class StringHelper {
 
 		for (int i = 0; i < arr_cSrc.length; i++) {
 			ch = arr_cSrc[i];
-			if (ch == '<')
-				buf.append("&lt;");
-			else if (ch == '>')
-				buf.append("&gt;");
-			else if (ch == '"' && quotes == 1)
-				buf.append("&quot;");
-			else if (ch == '\'' && quotes == 2)
-				buf.append("&#039;");
-			else if (ch == '&')
-				buf.append("&amp;");
-			else
-				buf.append(ch);
+			if (ch == '<') {
+                buf.append("&lt;");
+            } else if (ch == '>') {
+                buf.append("&gt;");
+            } else if (ch == '"' && quotes == 1) {
+                buf.append("&quot;");
+            } else if (ch == '\'' && quotes == 2) {
+                buf.append("&#039;");
+            } else if (ch == '&') {
+                buf.append("&amp;");
+            } else {
+                buf.append(ch);
+            }
 		}
 
 		return buf.toString();
@@ -1540,8 +1548,9 @@ public final class StringHelper {
 	 * @since 1.0
 	 */
 	public static String htmlDecode(String strSrc) {
-		if (strSrc == null)
-			return "";
+		if (strSrc == null) {
+            return "";
+        }
 		strSrc = strSrc.replaceAll("&lt;", "<");
 		strSrc = strSrc.replaceAll("&gt;", ">");
 		strSrc = strSrc.replaceAll("&quot;", "\"");
@@ -1582,12 +1591,13 @@ public final class StringHelper {
 	 * @return 转换后的字符串
 	 */
 	public static String str4Table(String str) {
-		if (str == null)
-			return "&nbsp;";
-		else if (str.equals(""))
-			return "&nbsp;";
-		else
-			return str;
+		if (str == null) {
+            return "&nbsp;";
+        } else if (str.equals("")) {
+            return "&nbsp;";
+        } else {
+            return str;
+        }
 	}
 
 }

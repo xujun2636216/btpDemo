@@ -208,7 +208,9 @@ public final class ExecHelper {
 	 * @since ostermillerutils 1.06.00
 	 */
 	public static ExecHelper execUsingShell(String command, String charset) throws IOException {
-		if (command == null) throw new NullPointerException();
+		if (command == null) {
+            throw new NullPointerException();
+        }
 		String[] cmdarray;
 		String os = System.getProperty("os.name");
 		if (os.equals("Windows 95") || os.equals("Windows 98") || os.equals("Windows ME")){

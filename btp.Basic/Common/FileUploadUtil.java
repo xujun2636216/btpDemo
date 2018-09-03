@@ -110,8 +110,9 @@ public class FileUploadUtil {
                     System.out.println("++++====="+name);
                     long size = item.getSize();
                     //�ж���ļ���ʱ��ֻ�ϴ����ļ���
-                    if ((name == null || name.equals("")) && size == 0)
+                    if ((name == null || name.equals("")) && size == 0) {
                         continue;
+                    }
                     Matcher m = p.matcher(name);
                     boolean result = m.find();
                     if (result) {

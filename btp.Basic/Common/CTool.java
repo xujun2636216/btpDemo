@@ -35,13 +35,16 @@ public class CTool {
      */
     public static final String replace(String strSrc, String strOld,
                                        String strNew) {
-        if (strSrc == null || strOld == null || strNew == null)
+        if (strSrc == null || strOld == null || strNew == null) {
             return "";
+        }
 
         int i = 0;
         
         if (strOld.equals(strNew)) //�����¾��ַ�һ��������ѭ��
-        	return strSrc;
+        {
+            return strSrc;
+        }
         
         if ((i = strSrc.indexOf(strOld, i)) >= 0) {
             char[] arr_cSrc = strSrc.toCharArray();
@@ -77,8 +80,9 @@ public class CTool {
      */
 
     public static String htmlEncode(String strSrc) {
-        if (strSrc == null)
+        if (strSrc == null) {
             return "";
+        }
 
         char[] arr_cSrc = strSrc.toCharArray();
         StringBuffer buf = new StringBuffer(arr_cSrc.length);
@@ -87,18 +91,19 @@ public class CTool {
         for (int i = 0; i < arr_cSrc.length; i++) {
             ch = arr_cSrc[i];
 
-            if (ch == '<')
+            if (ch == '<') {
                 buf.append("&lt;");
-            else if (ch == '>')
+            } else if (ch == '>') {
                 buf.append("&gt;");
-            else if (ch == '"')
+            } else if (ch == '"') {
                 buf.append("&quot;");
-            else if (ch == '\'')
+            } else if (ch == '\'') {
                 buf.append("&#039;");
-            else if (ch == '&')
+            } else if (ch == '&') {
                 buf.append("&amp;");
-            else
+            } else {
                 buf.append(ch);
+            }
         }
 
         return buf.toString();
@@ -114,8 +119,9 @@ public class CTool {
      */
     public static String htmlEncode(String strSrc, int quotes) {
 
-        if (strSrc == null)
+        if (strSrc == null) {
             return "";
+        }
         if (quotes == 0) {
             return htmlEncode(strSrc);
         }
@@ -126,18 +132,19 @@ public class CTool {
 
         for (int i = 0; i < arr_cSrc.length; i++) {
             ch = arr_cSrc[i];
-            if (ch == '<')
+            if (ch == '<') {
                 buf.append("&lt;");
-            else if (ch == '>')
+            } else if (ch == '>') {
                 buf.append("&gt;");
-            else if (ch == '"' && quotes == 1)
+            } else if (ch == '"' && quotes == 1) {
                 buf.append("&quot;");
-            else if (ch == '\'' && quotes == 2)
+            } else if (ch == '\'' && quotes == 2) {
                 buf.append("&#039;");
-            else if (ch == '&')
+            } else if (ch == '&') {
                 buf.append("&amp;");
-            else
+            } else {
                 buf.append(ch);
+            }
         }
 
         return buf.toString();
@@ -150,8 +157,9 @@ public class CTool {
      * @since  1.0
      */
     public static String htmlDecode(String strSrc) {
-        if (strSrc == null)
+        if (strSrc == null) {
             return "";
+        }
         strSrc = strSrc.replaceAll("&lt;", "<");
         strSrc = strSrc.replaceAll("&gt;", ">");
         strSrc = strSrc.replaceAll("&quot;", "\"");
@@ -284,12 +292,13 @@ public class CTool {
      *@return ת������ַ���
      */
     public static String str4Table(String str) {
-        if (str == null)
+        if (str == null) {
             return "&nbsp;";
-        else if (str.equals(""))
+        } else if (str.equals("")) {
             return "&nbsp;";
-        else
+        } else {
             return str;
+        }
     }
 
     /**
@@ -393,10 +402,11 @@ public class CTool {
      *@return ���strΪnullֵ�����ؿմ�"",���򷵻�str
      */
     public static String null2Blank(String str) {
-        if (str == null)
+        if (str == null) {
             return "";
-        else
+        } else {
             return str;
+        }
     }
 
     /**
@@ -406,10 +416,11 @@ public class CTool {
      */
 
     public static String null2Blank(Date d) {
-        if (d == null)
+        if (d == null) {
             return "";
-        else
+        } else {
             return d.toString();
+        }
     }
 
     /**
@@ -420,10 +431,11 @@ public class CTool {
     public static int null2Zero(String str) {
         int intTmp;
         intTmp = str2Int(str);
-        if (intTmp == -1)
+        if (intTmp == -1) {
             return 0;
-        else
+        } else {
             return intTmp;
+        }
     }
     /**
      * ��nullת��Ϊ�ַ���"0"
@@ -432,10 +444,11 @@ public class CTool {
      */
     public static String null2SZero(String str) {
         str = CTool.null2Blank(str);
-        if (str.equals(""))
+        if (str.equals("")) {
             return "0";
-        else
+        } else {
             return str;
+        }
     }
 
     /**

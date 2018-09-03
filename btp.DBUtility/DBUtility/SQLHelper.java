@@ -50,10 +50,12 @@ public abstract class SQLHelper {
             throw new Exception("executeNonQuery方法出错:" + e.getMessage());
         } finally {
             try {
-                if (pstmt != null)
+                if (pstmt != null) {
                     pstmt.close();
-                if (conn != null)
+                }
+                if (conn != null) {
                     conn.close();
+                }
             } catch (Exception e) {
                 throw new Exception("执行executeNonQuery方法出错:" + e.getMessage());
             }
@@ -100,10 +102,12 @@ public abstract class SQLHelper {
             throw new Exception("executeSqlResultSet方法出错:" + e.getMessage());
         } finally {
             try {
-                if (pstmt != null)
+                if (pstmt != null) {
                     pstmt.close();
-                if (conn != null)
+                }
+                if (conn != null) {
                     conn.close();
+                }
             } catch (Exception e) {
                 throw new Exception("executeSqlResultSet方法出错:" + e.getMessage());
             }
@@ -141,12 +145,15 @@ public abstract class SQLHelper {
             throw new Exception("executeSqlObject方法出错:" + e.getMessage());
         } finally {
             try {
-                if (rs != null)
+                if (rs != null) {
                     rs.close();
-                if (pstmt != null)
+                }
+                if (pstmt != null) {
                     pstmt.close();
-                if (conn != null)
+                }
+                if (conn != null) {
                     conn.close();
+                }
             } catch (Exception e) {
                 throw new Exception("executeSqlObject方法出错:" + e.getMessage());
             }
@@ -187,12 +194,15 @@ public abstract class SQLHelper {
             throw new Exception("executeSqlObject方法出错:" + e.getMessage());
         } finally {
             try {
-                if (rs != null)
+                if (rs != null) {
                     rs.close();
-                if (pstmt != null)
+                }
+                if (pstmt != null) {
                     pstmt.close();
-                if (conn != null)
+                }
+                if (conn != null) {
                     conn.close();
+                }
             } catch (Exception e) {
                 throw new Exception("executeSqlObject方法出错:" + e.getMessage());
             }

@@ -19,7 +19,9 @@ public class DealString {
 
 	//�ж��ַ����Ƿ�Ϊ�գ���ɾ����β�ո�
 	public static String convertNullCode(String tempSql){
-		if (tempSql==null) tempSql="";
+		if (tempSql==null) {
+            tempSql="";
+        }
 		return tempSql;
 	}
 	/**

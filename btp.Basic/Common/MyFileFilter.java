@@ -29,8 +29,12 @@ public class MyFileFilter implements FileFilter {
 
     public MyFileFilter(String extension, String description) {
 		this();
-		if(extension!=null) addExtension(extension);
-	 	if(description!=null) setDescription(description);
+		if(extension!=null) {
+            addExtension(extension);
+        }
+	 	if(description!=null) {
+            setDescription(description);
+        }
     }
 
     public MyFileFilter(String[] filters) {
@@ -43,7 +47,9 @@ public class MyFileFilter implements FileFilter {
 		    // add filters one by one
 		    addExtension(filters[i]);
 		}
-	 	if(description!=null) setDescription(description);
+	 	if(description!=null) {
+            setDescription(description);
+        }
     }
 
     public boolean accept(File f) {

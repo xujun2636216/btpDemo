@@ -365,10 +365,11 @@ public class DateUtil {
 		String strReturn = "";
 		try {
 			String p = null;
-			if (strDate.length() > 10)
-				p = "yyyy-MM-dd HH:mm:ss";
-			else
-				p = "yyyy-MM-dd";
+			if (strDate.length() > 10) {
+                p = "yyyy-MM-dd HH:mm:ss";
+            } else {
+                p = "yyyy-MM-dd";
+            }
 			Date d = DateUtil.str2Date(p, CTool.replace(strDate, "T", " "));
 			strReturn = DateUtil.date2Str("EEE d-MMM", d);
 
@@ -386,10 +387,11 @@ public class DateUtil {
 		String strReturn = "";
 		try {
 			String p = null;
-			if (strDate.length() > 10)
-				p = "yyyy-MM-dd HH:mm:ss";
-			else
-				p = "yyyy-MM-dd";
+			if (strDate.length() > 10) {
+                p = "yyyy-MM-dd HH:mm:ss";
+            } else {
+                p = "yyyy-MM-dd";
+            }
 			Date d = DateUtil.str2Date(p, CTool.replace(strDate, "T", " "));
 			strReturn = DateUtil.date2Str("EEE d-MMM hh:mm aaa", d);
 
@@ -436,8 +438,9 @@ public class DateUtil {
 	 * @return �ַ���
 	 */
 	public static final String getDateFromNow(int timeType, int timenum, String format_string){
-		if ((format_string == null)||(format_string.equals("")))
-			format_string = "yyyy-MM-dd HH:mm:ss";
+		if ((format_string == null)||(format_string.equals(""))) {
+            format_string = "yyyy-MM-dd HH:mm:ss";
+        }
 		Calendar cld = Calendar.getInstance();
 		Date date = null;
 	    DateFormat df = new SimpleDateFormat(format_string);
@@ -451,8 +454,9 @@ public class DateUtil {
 	 * @return �ַ���
 	 */
 	public static final String getDateNow(String format_string){
-		if ((format_string == null)||(format_string.equals("")))
-			format_string = "yyyy-MM-dd HH:mm:ss";
+		if ((format_string == null)||(format_string.equals(""))) {
+            format_string = "yyyy-MM-dd HH:mm:ss";
+        }
 		Calendar cld = Calendar.getInstance();
 	    DateFormat df = new SimpleDateFormat(format_string);
 	    return df.format(cld.getTime());

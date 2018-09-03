@@ -52,14 +52,18 @@ public class DateHandler {
   public static boolean isSeason(String date){
     int getMonth = Integer.parseInt(date.substring(5,7));
     boolean sign = false;
-    if (getMonth==3)
-      sign = true;
-    if (getMonth==6)
-      sign = true;
-    if (getMonth==9)
-      sign = true;
-    if (getMonth==12)
-      sign = true;
+    if (getMonth==3) {
+        sign = true;
+    }
+    if (getMonth==6) {
+        sign = true;
+    }
+    if (getMonth==9) {
+        sign = true;
+    }
+    if (getMonth==12) {
+        sign = true;
+    }
     return sign;
   }
   
@@ -234,10 +238,12 @@ public class DateHandler {
     int intDay=cld.get(Calendar.DAY_OF_MONTH);
     String mons=String.valueOf(intMon);
     String days=String.valueOf(intDay);
-    if(intMon<10)
-      mons="0"+String.valueOf(intMon);
-    if(intDay<10)
-      days="0"+String.valueOf(intDay);
+    if(intMon<10) {
+        mons="0"+String.valueOf(intMon);
+    }
+    if(intDay<10) {
+        days="0"+String.valueOf(intDay);
+    }
     return String.valueOf(cld.get(Calendar.YEAR))+"-"+mons+"-"+days;
   }
 
@@ -251,10 +257,11 @@ public class DateHandler {
 	    Date date = new Date();
 	    cld.setTime(date);
 	    int intMon=cld.get(Calendar.MONTH) + 1;
-		if(intMon<10)
-			strmonth = "0" + String.valueOf(intMon);
-		else
-			strmonth = String.valueOf(intMon);
+		if(intMon<10) {
+            strmonth = "0" + String.valueOf(intMon);
+        } else {
+            strmonth = String.valueOf(intMon);
+        }
 		date = null;
 		return strmonth;
 	}
@@ -281,10 +288,12 @@ public class DateHandler {
     int intDay = cld.get(Calendar.DAY_OF_MONTH);
     String mons = String.valueOf(intMon);
     String days = String.valueOf(intDay);
-    if(intMon < 10)
-    	mons="0" + String.valueOf(intMon);
-    if(intDay < 10)
-    	days = "0" + String.valueOf(intDay);
+    if(intMon < 10) {
+        mons="0" + String.valueOf(intMon);
+    }
+    if(intDay < 10) {
+        days = "0" + String.valueOf(intDay);
+    }
     return String.valueOf(cld.get(Calendar.YEAR)) + "-" + mons + "-" + days;
   }
 

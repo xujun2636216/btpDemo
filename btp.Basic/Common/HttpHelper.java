@@ -288,10 +288,11 @@ public class HttpHelper {
 		String ContentEncoding = conn.getHeaderField("Content-Encoding");
 		if (ContentEncoding != null) {
 			ContentEncoding = ContentEncoding.toLowerCase();
-			if (ContentEncoding.indexOf("gzip") != 1)
-				return new GZIPInputStream(conn.getInputStream());
-			else if (ContentEncoding.indexOf("deflate") != 1)
-				return new DeflaterInputStream(conn.getInputStream());
+			if (ContentEncoding.indexOf("gzip") != 1) {
+                return new GZIPInputStream(conn.getInputStream());
+            } else if (ContentEncoding.indexOf("deflate") != 1) {
+                return new DeflaterInputStream(conn.getInputStream());
+            }
 		}
 
 		return conn.getInputStream();
@@ -310,8 +311,9 @@ public class HttpHelper {
 		String ContentEncoding = null;
 		if (header != null) {
 			for (Map.Entry<String, String> entry : header.entrySet()) {
-				if (entry.getKey().equalsIgnoreCase("Content-Encoding"))
-					ContentEncoding = entry.getValue();
+				if (entry.getKey().equalsIgnoreCase("Content-Encoding")) {
+                    ContentEncoding = entry.getValue();
+                }
 				conn.setRequestProperty(entry.getKey(), entry.getValue());
 			}
 		}
