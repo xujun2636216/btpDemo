@@ -5,6 +5,7 @@ import DBUtility.HibernateUtils;
 import btpEntity.ResultDTO;
 import btpEntity.Student;
 import org.hibernate.Session;
+import org.hibernate.Transaction;
 import org.hibernate.query.Query;
 
 import java.util.ArrayList;
@@ -16,11 +17,12 @@ public class StudentsBLL {
     private static final Session session = HibernateUtils.getSession();
 
     public static List<Student> getList() {
-        session.beginTransaction();
+
+        Transaction tx=session.beginTransaction();
         List<Student> objlist = new ArrayList<Student>();
         try {
-            String hql="from Student t";
-            objlist = session.createQuery(hql.toString()).list();
+            String sql=" select * from Student";
+            objlist = session.createSQLQuery(sql).list();
         } catch (Exception ex) {
             LogHelper.Error(ex.getMessage(), ex);
         } finally {
