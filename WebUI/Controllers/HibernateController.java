@@ -15,7 +15,7 @@ public class HibernateController {
     @Test
     public void Search() {
         List<Student> studentList = objbll.getList();
-        String  Jsonstr="{\"name\":\"xujun\",\"age\":10}";
+
 
     }
 
