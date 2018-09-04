@@ -1,20 +1,23 @@
 package Controllers;
 
 import BLL.StudentsBLL;
+import btpEntity.ListResultDTO;
 import btpEntity.Student;
 import org.junit.Test;
-import java.util.List;
 
 
 public class HibernateController {
 
 
     /**
-     * 查询数据 helloword
+     * 查询数据
      */
     @Test
     public void Search() {
-        List<Student> studentList = StudentsBLL.getList();
+        Student model=new Student();
+        model.setAge(0);
+        model.setName("小明");
+        ListResultDTO<Student> studentList = StudentsBLL.getList(model,2,2);
 
     }
 
