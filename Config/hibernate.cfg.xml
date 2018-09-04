@@ -18,6 +18,7 @@
         <property name="format_sql">true</property>
         <!-- 指定自动生成数据表的策略:在运行数据库的时候hibernate会为我们在数据库自动生成数据表的策略 -->
         <property name="hbm2ddl.auto">update</property>
-        <mapping class="btpEntity.Student" resource="btpXml/Student.hbm.xml"/>
+        <!--<mapping class="btpEntity.Student" resource="btpXml/Student.hbm.xml"/>-->
+        <mapping   resource="btpXml/Student.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>

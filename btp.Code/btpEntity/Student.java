@@ -1,11 +1,12 @@
 package btpEntity;
 
-public class Student  {
-    private  int id;
+public class Student {
+    private int id;
     private int age;
     private String name;
 
-    public Student() {}
+    public Student() {
+    }
 
     public int getId() {
         return id;
@@ -30,7 +31,6 @@ public class Student  {
     public void setName(String name) {
         this.name = name;
     }
-
 
 
 }

@@ -8,36 +8,64 @@ import btpEntity.Student;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
-
-import javax.transaction.Transactional;
-import java.util.ArrayList;
 import java.util.List;
 
 public class StudentsBLL {
 
-    // 获取Session连接
-    private static final Session session = HibernateUtils.getSession();
 
-    public static ListResultDTO<Student> getList(Student model, int page, int pageSize) {
-       int  Count=0;
-        ListResultDTO<Student> resultDTO=null;
-        Transaction tx=session.beginTransaction();
-        List<Student> objlist = new ArrayList<Student>();
+    /**
+     * @param model
+     * @查询学生信息
+     */
+    public static List<Object[]> getStudentList(Student model) {
+
+        final Session session = HibernateUtils.getSession();
+        Transaction tx = session.beginTransaction();
+        List<Object[]> objlist = null;
         try {
-            String sql=" select * from Student where 1=1 ";
+            String sql = " select * from Student where 1=1 ";
+            Query query = session.createSQLQuery(sql);
+            objlist=query.list();
+            tx.commit();
+        } catch (Exception ex) {
+            LogHelper.Error(ex.getMessage(), ex);
+        } finally {
+            session.close();
+        }
+        return objlist;
+    }
 
-            if (model.getAge()>0) {
-                sql+=" and age=:age";
+
+    /**
+     * @param model
+     * @param page
+     * @param pageSize 查询学生信息
+     */
+    public static ListResultDTO<Student> getList(Student model, int page, int pageSize) {
+
+        final Session session = HibernateUtils.getSession();
+        int Count = 0;
+        ListResultDTO<Student> resultDTO = null;
+        Transaction tx = session.beginTransaction();
+        List<Student> objlist = null;
+        try {
+            String sql = " select * from Student where 1=1 ";
+
+            if (model.getAge() > 0) {
+                sql += " and age=:age";
             }
-            if (!model.getName().isEmpty()) {
-                sql+=" and name=:name";
+            if (model.getName()!=null&&!model.getName().isEmpty()) {
+                sql += " and name=:name";
             }
-            Query  query = session.createSQLQuery(sql).setParameter(0,model.getAge()).setParameter(1,model.getName());
-            Count=query.list().size();
-            query.setFirstResult((page-1)*pageSize);
+            Query query = session.createSQLQuery(sql).addEntity(Student.class);
+            //参数化编程
+            query.setProperties(model);
+            Count = query.list().size();
+            query.setFirstResult((page - 1) * pageSize);
             query.setMaxResults(pageSize);
             objlist=query.list();
-            resultDTO=new ListResultDTO<Student>(true,0,"",Count,objlist);
+            tx.commit();
+            resultDTO = new ListResultDTO<Student>(true, 0, "", Count, objlist);
         } catch (Exception ex) {
             LogHelper.Error(ex.getMessage(), ex);
         } finally {
@@ -48,54 +76,151 @@ public class StudentsBLL {
 
 
     /**
-     * 添加数据
+     * @param id 查询学生信息
      */
-    public static ResultDTO AddStudent() {
-
-        ResultDTO result = new ResultDTO();
-        int count = 0;
+    public static Student getListbyId(int id) {
+        final Session session = HibernateUtils.getSession();
+        Transaction tx = session.beginTransaction();
+        Student model = null;
         try {
-
-        } catch (Exception e) {
-            result.setResultCode(1);
-            result.setSuccess(false);
-            result.setMsg(e.getMessage());
+            String sql = " select * from Student where 1=1 and id="+id+"";
+            Query query = session.createSQLQuery(sql).addEntity(Student.class);
+            model = (Student) query.list().get(0);
+            tx.commit();
+        } catch (Exception ex) {
+            LogHelper.Error(ex.getMessage(), ex);
+        } finally {
+            session.close();
         }
-
-        return result;
-    }
-
-    /**
-     * 更新数据
-     */
-    public static ResultDTO UpdateStudent() {
-        ResultDTO result = new ResultDTO();
-        int count = 0;
-        try {
-
-        } catch (Exception e) {
-            result.setResultCode(1);
-            result.setSuccess(false);
-            result.setMsg(e.getMessage());
-        }
-        return result;
+        return model;
     }
 
 
     /**
-     * @删除学生
+     * @param model 添加学生信息
      */
-    public static ResultDTO DelStudent() {
-
-        ResultDTO result = new ResultDTO();
-        int count = 0;
+    public static ResultDTO AddStudent(Student model) {
+        final Session session = HibernateUtils.getSession();
+        ResultDTO result = null;
+        Transaction tx = session.beginTransaction();
         try {
-
-        } catch (Exception e) {
-            result.setResultCode(1);
-            result.setSuccess(false);
-            result.setMsg(e.getMessage());
+            //适用于长会话流程
+            session.persist(model);
+            //session.save(model);
+            tx.commit();
+            result = new ResultDTO(true, 0, "添加成功");
+        } catch (Exception ex) {
+            //事物的回滚
+            tx.rollback();
+            result = new ResultDTO(false, 1, ex.getMessage());
+        } finally {
+            session.close();
         }
         return result;
     }
+
+
+    /**
+     * @param model 更新学生信息
+     */
+    public static ResultDTO UpdateStudent(Student model) {
+        final Session session = HibernateUtils.getSession();
+        ResultDTO result = null;
+        Transaction tx = session.beginTransaction();
+        try {
+            session.update(model);
+            tx.commit();
+            result = new ResultDTO(true, 0, "更新成功");
+        } catch (Exception ex) {
+            //事物的回滚
+            tx.rollback();
+            result = new ResultDTO(false, 1, ex.getMessage());
+        } finally {
+            session.close();
+        }
+        return result;
+    }
+
+
+    /**
+     * @param model 更新学生信息
+     */
+    public static ResultDTO ModifyStudent(Student model) {
+        final Session session = HibernateUtils.getSession();
+        ResultDTO result = null;
+        Transaction tx = session.beginTransaction();
+        try {
+            StringBuilder sql = new StringBuilder();
+            sql.append(" update Student set ");
+            if (model.getAge() > 0) {
+                sql.append(" age=:age,");
+            }
+            if (!model.getName().isEmpty()) {
+                sql.append(" name=:name");
+            }
+            sql.append(" where id=:id");
+            Query query=session.createSQLQuery(sql.toString());
+            query.setProperties(model);
+            query.executeUpdate();
+            tx.commit();
+            result = new ResultDTO(true, 0, "更新成功");
+        } catch (Exception ex) {
+            //事物的回滚
+            tx.rollback();
+            result = new ResultDTO(false, 1, ex.getMessage());
+        } finally {
+            session.close();
+        }
+        return result;
+    }
+
+
+    /**
+     * @param model 删除实体
+     */
+    public static ResultDTO DelStudent(Student model) {
+        final Session session = HibernateUtils.getSession();
+        ResultDTO result = null;
+        Transaction tx = session.beginTransaction();
+        try {
+            session.delete(model);
+            tx.commit();
+            result = new ResultDTO(true, 0, "删除成功");
+        } catch (Exception ex) {
+            //事物的回滚
+            tx.rollback();
+            result = new ResultDTO(false, 1, ex.getMessage());
+        } finally {
+            session.close();
+        }
+        return result;
+    }
+
+    /**
+     *  删除实体
+     */
+    public static ResultDTO  _DelStudent(int id) {
+        final Session session = HibernateUtils.getSession();
+        ResultDTO result = null;
+        Transaction tx = session.beginTransaction();
+        try {
+            String sql="delete from Student where 1=1 and id=:id";
+            Query query=session.createSQLQuery(sql);
+            Student model=new Student();
+            model.setId(id);
+            query.setProperties(model);
+            query.executeUpdate();
+            tx.commit();
+            result = new ResultDTO(true, 0, "删除成功");
+        } catch (Exception ex) {
+            //事物的回滚
+            tx.rollback();
+            result = new ResultDTO(false, 1, ex.getMessage());
+        } finally {
+            session.close();
+        }
+        return result;
+    }
+
+
 }
