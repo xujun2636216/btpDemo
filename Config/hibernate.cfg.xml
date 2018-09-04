@@ -20,5 +20,6 @@
         <property name="hbm2ddl.auto">update</property>
         <!--<mapping class="btpEntity.Student" resource="btpXml/Student.hbm.xml"/>-->
         <mapping   resource="btpXml/Student.hbm.xml"/>
+        <mapping   resource="btpXml/StudentSearch.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>

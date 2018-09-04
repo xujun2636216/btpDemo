@@ -4,8 +4,10 @@ import BLL.StudentsBLL;
 import btpEntity.ListResultDTO;
 import btpEntity.ResultDTO;
 import btpEntity.Student;
+import btpExEntity.StudentSearch;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class HibernateController {
@@ -15,11 +17,24 @@ public class HibernateController {
      * 查询数据
      */
     @Test
+    public void Searchlist() {
+
+        List<StudentSearch> studentlist = StudentsBLL.Search();
+
+    }
+
+    /**
+     * 查询数据
+     */
+    @Test
     public void SearchgetStudentList() {
-        Student model = new Student();
-        List<Object[]> objlist=StudentsBLL.getStudentList(model);
-        objlist.forEach(p->{
-            Object[] obj=p;
+        List<Student> studentlist = new ArrayList<>();
+        List<Object[]> objlist = StudentsBLL.getStudentList();
+        objlist.forEach(p -> {
+            Student mode = new Student();
+            mode.setAge(Integer.parseInt(p[0].toString()));
+            mode.setName(p[1].toString());
+            studentlist.add(mode);
         });
     }
 
@@ -30,7 +45,7 @@ public class HibernateController {
     public void Search() {
         Student model = new Student();
         ListResultDTO<Student> studentList = StudentsBLL.getList(model, 1, 10);
-        if(studentList!=null&&!studentList.getDatalist().isEmpty()){
+        if (studentList != null && !studentList.getDatalist().isEmpty()) {
 
         }
     }

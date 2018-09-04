@@ -5,25 +5,49 @@ import DBUtility.HibernateUtils;
 import btpEntity.ListResultDTO;
 import btpEntity.ResultDTO;
 import btpEntity.Student;
+import btpExEntity.StudentSearch;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
+
+import java.util.ArrayList;
 import java.util.List;
 
 public class StudentsBLL {
 
 
     /**
+     * 查询学生信息
+     */
+    public static List<StudentSearch> Search() {
+
+        final Session session = HibernateUtils.getSession();
+        Transaction tx = session.beginTransaction();
+        List<StudentSearch> objlist = new ArrayList<>();
+        try {
+            String sql = " select t1.*,t2.phone  from Student t1 left join Students t2 on t1.id=t2.studentId ";
+            Query query = session.createSQLQuery(sql).addEntity(StudentSearch.class);
+            objlist=query.list();
+            tx.commit();
+        } catch (Exception ex) {
+            LogHelper.Error(ex.getMessage(), ex);
+        } finally {
+            session.close();
+        }
+        return objlist;
+    }
+
+    /**
      * @param model
      * @查询学生信息
      */
-    public static List<Object[]> getStudentList(Student model) {
+    public static List<Object[]> getStudentList() {
 
         final Session session = HibernateUtils.getSession();
         Transaction tx = session.beginTransaction();
         List<Object[]> objlist = null;
         try {
-            String sql = " select * from Student where 1=1 ";
+            String sql = " select age,name from Student where 1=1 ";
             Query query = session.createSQLQuery(sql);
             objlist=query.list();
             tx.commit();
