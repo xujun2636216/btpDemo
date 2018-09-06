@@ -27,7 +27,7 @@ public class StudentsBLL {
         try {
             String sql = " select t1.*,t2.phone  from Student t1 left join Students t2 on t1.id=t2.studentId ";
             Query query = session.createSQLQuery(sql).addEntity(StudentSearch.class);
-            objlist=query.list();
+            objlist = query.list();
             tx.commit();
         } catch (Exception ex) {
             LogHelper.Error(ex.getMessage(), ex);
@@ -49,7 +49,7 @@ public class StudentsBLL {
         try {
             String sql = " select age,name from Student where 1=1 ";
             Query query = session.createSQLQuery(sql);
-            objlist=query.list();
+            objlist = query.list();
             tx.commit();
         } catch (Exception ex) {
             LogHelper.Error(ex.getMessage(), ex);
@@ -78,7 +78,7 @@ public class StudentsBLL {
             if (model.getAge() > 0) {
                 sql += " and age=:age";
             }
-            if (model.getName()!=null&&!model.getName().isEmpty()) {
+            if (model.getName() != null && !model.getName().isEmpty()) {
                 sql += " and name=:name";
             }
             Query query = session.createSQLQuery(sql).addEntity(Student.class);
@@ -87,7 +87,7 @@ public class StudentsBLL {
             Count = query.list().size();
             query.setFirstResult((page - 1) * pageSize);
             query.setMaxResults(pageSize);
-            objlist=query.list();
+            objlist = query.list();
             tx.commit();
             resultDTO = new ListResultDTO<Student>(true, 0, "", Count, objlist);
         } catch (Exception ex) {
@@ -107,7 +107,7 @@ public class StudentsBLL {
         Transaction tx = session.beginTransaction();
         Student model = null;
         try {
-            String sql = " select * from Student where 1=1 and id="+id+"";
+            String sql = " select * from Student where 1=1 and id=" + id + "";
             Query query = session.createSQLQuery(sql).addEntity(Student.class);
             model = (Student) query.list().get(0);
             tx.commit();
@@ -183,7 +183,7 @@ public class StudentsBLL {
                 sql.append(" name=:name");
             }
             sql.append(" where id=:id");
-            Query query=session.createSQLQuery(sql.toString());
+            Query query = session.createSQLQuery(sql.toString());
             query.setProperties(model);
             query.executeUpdate();
             tx.commit();
@@ -221,16 +221,16 @@ public class StudentsBLL {
     }
 
     /**
-     *  删除实体
+     * 删除实体
      */
-    public static ResultDTO  _DelStudent(int id) {
+    public static ResultDTO _DelStudent(int id) {
         final Session session = HibernateUtils.getSession();
         ResultDTO result = null;
         Transaction tx = session.beginTransaction();
         try {
-            String sql="delete from Student where 1=1 and id=:id";
-            Query query=session.createSQLQuery(sql);
-            Student model=new Student();
+            String sql = "delete from Student where 1=1 and id=:id";
+            Query query = session.createSQLQuery(sql);
+            Student model = new Student();
             model.setId(id);
             query.setProperties(model);
             query.executeUpdate();
