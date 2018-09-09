@@ -7,8 +7,10 @@ public class LogHelper {
 
     /**
      * @param Msg
+     * @param i
+     * @param i1
      */
-    public static void Debug(String Msg) {
+    public static void Debug(String Msg, int i, int i1) {
         if (logger.isDebugEnabled()) {
             logger.debug(Msg);
         }

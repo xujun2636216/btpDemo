@@ -2,6 +2,7 @@ package Controllers;
 
 
 import Common.FastJsonUtil;
+import Common.LogHelper;
 import Common.StringHelper;
 import Redis.RedisHelper;
 import btpEntity.Employees;
@@ -19,7 +20,7 @@ public class RedisController {
         Employees model = new Employees(100, "小红", 59, 6666.66);
         String key = StringHelper.getUUID();
         String value = FastJsonUtil.toJSONString(model);
-        RedisHelper.setHash(1, "Employees", key, value);
+        RedisHelper.setHash(1, "Employees", key, value,10);
     }
 
 

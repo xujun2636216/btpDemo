@@ -146,6 +146,31 @@ public class RedisHelper {
      * @param value
      * @return
      */
+    public static Boolean setHash(int index, String HashId, String key, String value,int seconds) {
+
+        Boolean flag = false;
+        Jedis jedis = RedisClient.getRedis(index);
+        try {
+            jedis.hset(HashId, key, value);
+            //设置过期时间不管用
+            jedis.expire(key, seconds);
+            flag = true;
+        } catch (Exception ex) {
+            LogHelper.Error(ex.getMessage(), ex);
+        } finally {
+            jedis.close();
+        }
+        return flag;
+    }
+
+    /**
+     * 数据库DBIndex
+     *
+     * @param HashId
+     * @param key
+     * @param value
+     * @return
+     */
     public static Boolean setHash(int index, String HashId, String key, String value) {
 
         Boolean flag = false;
