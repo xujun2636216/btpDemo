@@ -35,6 +35,10 @@ public class RedisClient {
         }
     }
 
+
+    /**
+     * 判断是否连接上redis服务器
+     */
     public static boolean isConnected() {
         return getRedis().isConnected();
     }
