@@ -4,10 +4,11 @@
     <option name="GROUP_BY_SEVERITY" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="111058e0-084c-4b4c-b84a-4e52f0600b58" name="Default" comment="Dom4j的使用">
-      <change afterPath="$PROJECT_DIR$/Config/mongodb.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mongo-java-driver-3.8.1.jar" afterDir="false" />
+    <list default="true" id="111058e0-084c-4b4c-b84a-4e52f0600b58" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/btp.DBUtility/Mongodb/MongodbHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/btp.DBUtility/Mongodb/MongodbUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/mongodb.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Config/mongodb.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,52 +29,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RedisClient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/btp.Basic/Redis/RedisClient.java">
+      <file leaf-file-name="MongodbUtils.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/btp.DBUtility/Mongodb/MongodbUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="56" column="24" selection-start-line="56" selection-start-column="24" selection-end-line="56" selection-end-column="24" />
+            <state relative-caret-position="304">
+              <caret line="31" column="32" lean-forward="true" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
               <folding>
-                <element signature="e#1477#1478#0" expanded="true" />
-                <element signature="e#1524#1525#0" expanded="true" />
-                <element signature="e#1568#1569#0" expanded="true" />
-                <element signature="e#1597#1598#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="redis.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Config/redis.properties">
+      <file leaf-file-name="MongoCredential.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/mongo-java-driver-3.8.1.jar!/com/mongodb/MongoCredential.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="17" column="24" selection-end-line="20" selection-end-column="15" />
+            <state relative-caret-position="218">
+              <caret line="85" column="53" selection-start-line="85" selection-start-column="30" selection-end-line="85" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HibernateUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/btp.DBUtility/DBUtility/HibernateUtils.java">
+      <file leaf-file-name="MongoClient.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/mongo-java-driver-3.8.1.jar!/com/mongodb/MongoClient.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-              <folding>
-                <element signature="e#881#882#0" expanded="true" />
-                <element signature="e#942#943#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MybatisDBUtilsHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/btp.DBUtility/DBUtility/MybatisDBUtilsHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-              <folding>
-                <element signature="e#631#632#0" expanded="true" />
-                <element signature="e#671#672#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="163">
+              <caret line="89" column="11" selection-start-line="89" selection-start-column="11" selection-end-line="89" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -81,66 +62,8 @@
       <file leaf-file-name="mongodb.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Config/mongodb.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HibernateHelper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/btp.DBUtility/DBUtility/HibernateHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-              <folding>
-                <element signature="e#569#570#0" expanded="true" />
-                <element signature="e#630#631#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RedisHelper.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/btp.Basic/Redis/RedisHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="47" column="39" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
-              <folding>
-                <element signature="method#setString#0;class#RedisHelper#0" />
-                <element signature="docComment;method#setString#1;class#RedisHelper#0" />
-                <element signature="docComment;method#getString#0;class#RedisHelper#0" />
-                <element signature="method#getString#0;class#RedisHelper#0" />
-                <element signature="docComment;method#isExists#0;class#RedisHelper#0" />
-                <element signature="method#isExists#0;class#RedisHelper#0" />
-                <element signature="docComment;method#Del#0;class#RedisHelper#0" />
-                <element signature="method#Del#0;class#RedisHelper#0" />
-                <element signature="docComment;method#Dels#0;class#RedisHelper#0" />
-                <element signature="method#Dels#0;class#RedisHelper#0" />
-                <element signature="docComment;method#isExistsHash#0;class#RedisHelper#0" />
-                <element signature="method#isExistsHash#0;class#RedisHelper#0" />
-                <element signature="docComment;method#getHash#0;class#RedisHelper#0" />
-                <element signature="method#getHash#0;class#RedisHelper#0" />
-                <element signature="docComment;method#getHash#1;class#RedisHelper#0" />
-                <element signature="method#getHash#1;class#RedisHelper#0" />
-                <element signature="docComment;method#gethvals#0;class#RedisHelper#0" />
-                <element signature="method#gethvals#0;class#RedisHelper#0" />
-                <element signature="docComment;method#getHash#2;class#RedisHelper#0" />
-                <element signature="method#getHash#2;class#RedisHelper#0" />
-                <element signature="docComment;method#delHash#0;class#RedisHelper#0" />
-                <element signature="method#delHash#0;class#RedisHelper#0" />
-                <element signature="docComment;method#delHash#1;class#RedisHelper#0" />
-                <element signature="method#delHash#1;class#RedisHelper#0" />
-                <element signature="docComment;method#LockOrder#0;class#RedisHelper#0" />
-                <element signature="method#LockOrder#0;class#RedisHelper#0" />
-                <element signature="docComment;method#UnLockOrder#0;class#RedisHelper#0" />
-                <element signature="method#UnLockOrder#0;class#RedisHelper#0" />
-                <element signature="docComment;method#Zset#0;class#RedisHelper#0" />
-                <element signature="method#Zset#0;class#RedisHelper#0" />
-                <element signature="docComment;method#Zset#1;class#RedisHelper#0" />
-                <element signature="method#Zset#1;class#RedisHelper#0" />
-                <element signature="docComment;method#isZsetExists#0;class#RedisHelper#0" />
-                <element signature="method#isZsetExists#0;class#RedisHelper#0" />
-              </folding>
+            <state relative-caret-position="336">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -167,6 +90,7 @@
       <find>InsertUser</find>
       <find>S</find>
       <find>sfd</find>
+      <find>mechanism</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -175,9 +99,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/btp.Job/Job/JobA.java" />
-        <option value="$PROJECT_DIR$/btp.Job/Job/JobB.java" />
-        <option value="$PROJECT_DIR$/WebUI/Controllers/JobController.java" />
         <option value="$PROJECT_DIR$/Config/quartz.properties" />
         <option value="$PROJECT_DIR$/btp.Job/Job/JobTrigger.java" />
         <option value="$PROJECT_DIR$/btp.Job/Job/JobHelper.java" />
@@ -225,7 +146,10 @@
         <option value="$PROJECT_DIR$/WebUI/Controllers/Dom4jController.java" />
         <option value="$PROJECT_DIR$/btp.Basic/Redis/RedisHelper.java" />
         <option value="$PROJECT_DIR$/WebUI/Controllers/RedisController.java" />
+        <option value="$PROJECT_DIR$/btp.DBUtility/Redis/RedisClient.java" />
+        <option value="$PROJECT_DIR$/btp.DBUtility/Mongodb/MongodbClient.java" />
         <option value="$PROJECT_DIR$/Config/mongodb.properties" />
+        <option value="$PROJECT_DIR$/btp.DBUtility/Mongodb/MongodbUtils.java" />
       </list>
     </option>
   </component>
@@ -256,6 +180,33 @@
               <item name="btp" type="b2602c69:ProjectViewProjectNode" />
               <item name="btpDemo" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="btp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="btpDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="btp.DBUtility" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="btp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="btpDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="btp.DBUtility" type="462c0819:PsiDirectoryNode" />
+              <item name="DBUtility" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="btp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="btpDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="btp.DBUtility" type="462c0819:PsiDirectoryNode" />
+              <item name="Mongodb" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="btp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="btpDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="Config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="btp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="btpDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="WebUI" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -275,6 +226,9 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\linux系统的安装\btpDemo\lib" />
       <recent name="D:\linux系统的安装\btpDemo\btp.Basic\Common" />
@@ -500,20 +454,6 @@
       <workItem from="1535972961936" duration="18508000" />
       <workItem from="1536047990069" duration="23437000" />
       <workItem from="1536494063653" duration="2271000" />
-    </task>
-    <task id="LOCAL-00006" summary="修改文件名">
-      <created>1534494865264</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1534494865264</updated>
-    </task>
-    <task id="LOCAL-00007" summary="mybait的使用">
-      <created>1534586150491</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1534586150492</updated>
     </task>
     <task id="LOCAL-00008" summary="mybait的使用">
       <created>1534586382085</created>
@@ -844,7 +784,21 @@
       <option name="project" value="LOCAL" />
       <updated>1536209279541</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Dom4j的使用">
+      <created>1536572429987</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1536572429988</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Dom4j的使用">
+      <created>1536572522975</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1536572522975</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -880,7 +834,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="209071000" />
+    <option name="totallyTimeSpent" value="215049000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -960,7 +914,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="修改文件名" />
     <MESSAGE value="mybait的使用" />
-    <option name="LAST_COMMIT_MESSAGE" value="mybait的使用" />
+    <MESSAGE value="Dom4j的使用" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dom4j的使用" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -978,7 +933,7 @@
           <option name="timeStamp" value="212" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/btp.Basic/Redis/RedisClient.java</url>
+          <url>file://$PROJECT_DIR$/btp.DBUtility/Redis/RedisClient.java</url>
           <line>16</line>
           <properties />
           <option name="timeStamp" value="215" />
@@ -1040,45 +995,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/demo.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/btp.Basic/Common/CharTools.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="193" column="37" selection-start-line="193" selection-start-column="37" selection-end-line="193" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/jre/lib/ext/nashorn.jar!/jdk/nashorn/internal/runtime/regexp/joni/SearchAlgorithm.class" />
-    <entry file="jar://$PROJECT_DIR$/lib/hibernate-core-5.3.5.Final.jar!/org/hibernate/hql/internal/ast/util/SessionFactoryHelper.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/btp.BLL/BLL/PeopleBLL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/util/regex/Pattern.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-903">
-          <caret line="784" column="2" selection-start-line="784" selection-start-column="2" selection-end-line="784" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/btp.Basic/Common/StringHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="1231" column="49" lean-forward="true" selection-start-line="1231" selection-start-column="49" selection-end-line="1231" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/lang/SuppressWarnings.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
@@ -1334,30 +1250,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebUI/Controllers/RedisController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Config/redis.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="24" selection-end-line="20" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Config/mongodb.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/btp.DBUtility/DBUtility/HibernateHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
@@ -1365,17 +1257,6 @@
           <folding>
             <element signature="e#569#570#0" expanded="true" />
             <element signature="e#630#631#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/btp.DBUtility/DBUtility/HibernateUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#881#882#0" expanded="true" />
-            <element signature="e#942#943#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1391,23 +1272,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/btp.Basic/Redis/RedisClient.java">
+    <entry file="file://$PROJECT_DIR$/btp.DBUtility/RabbitMQ/BaseConnector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="56" column="24" selection-start-line="56" selection-start-column="24" selection-end-line="56" selection-end-column="24" />
+        <state relative-caret-position="192">
+          <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebUI/Controllers/RedisController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="29" column="49" lean-forward="true" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
           <folding>
-            <element signature="e#1477#1478#0" expanded="true" />
-            <element signature="e#1524#1525#0" expanded="true" />
-            <element signature="e#1568#1569#0" expanded="true" />
-            <element signature="e#1597#1598#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/btp.Basic/Redis/RedisHelper.java">
+    <entry file="file://$PROJECT_DIR$/btp.DBUtility/Redis/RedisHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="47" column="39" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
+        <state relative-caret-position="337">
+          <caret line="54" column="19" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
           <folding>
             <element signature="method#setString#0;class#RedisHelper#0" />
             <element signature="docComment;method#setString#1;class#RedisHelper#0" />
@@ -1447,6 +1332,89 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/btp.DBUtility/Redis/RedisClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="25" column="87" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="87" />
+          <folding>
+            <element signature="e#1477#1478#0" expanded="true" />
+            <element signature="e#1524#1525#0" expanded="true" />
+            <element signature="e#1568#1569#0" expanded="true" />
+            <element signature="e#1597#1598#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/btp.DBUtility/DBUtility/HibernateUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding>
+            <element signature="e#881#882#0" expanded="true" />
+            <element signature="e#942#943#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/mongo-java-driver-3.8.1.jar!/com/mongodb/client/MongoClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/btp.DBUtility/Mongodb/MongodbHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/mongo-java-driver-3.8.1.jar!/com/mongodb/MongoClientOptions.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="708" column="42" selection-start-line="708" selection-start-column="42" selection-end-line="708" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Config/redis.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Config/mongodb.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/mongo-java-driver-3.8.1.jar!/com/mongodb/MongoClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="89" column="11" selection-start-line="89" selection-start-column="11" selection-end-line="89" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/mongo-java-driver-3.8.1.jar!/com/mongodb/MongoCredential.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="85" column="53" selection-start-line="85" selection-start-column="30" selection-end-line="85" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/btp.DBUtility/Mongodb/MongodbUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="31" column="32" lean-forward="true" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
@@ -1464,7 +1432,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited />
+          <last-edited>No facets are configured</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
