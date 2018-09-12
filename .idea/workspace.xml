@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="111058e0-084c-4b4c-b84a-4e52f0600b58" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/btp.DBUtility/Mongodb/MongodbHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/btp.DBUtility/Mongodb/MongodbUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/mongodb.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Config/mongodb.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,13 +26,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MongodbUtils.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MongodbUtils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/btp.DBUtility/Mongodb/MongodbUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="31" column="32" lean-forward="true" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+            <state relative-caret-position="57">
+              <caret line="20" column="102" lean-forward="true" selection-start-line="20" selection-start-column="102" selection-end-line="20" selection-end-column="102" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ListResultDTO.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/btp.Code/btpEntity/ListResultDTO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+              <folding>
+                <element signature="e#427#428#0" expanded="true" />
+                <element signature="e#455#456#0" expanded="true" />
+                <element signature="e#494#495#0" expanded="true" />
+                <element signature="e#528#529#0" expanded="true" />
+                <element signature="e#564#565#0" expanded="true" />
+                <element signature="e#595#596#0" expanded="true" />
+                <element signature="e#644#645#0" expanded="true" />
+                <element signature="e#684#685#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -63,7 +79,7 @@
         <entry file="file://$PROJECT_DIR$/Config/mongodb.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="336">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -91,6 +107,7 @@
       <find>S</find>
       <find>sfd</find>
       <find>mechanism</find>
+      <find>btp</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -159,6 +176,15 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="C:\maven\repository" />
+        <option name="mavenHome" value="C:/apache-maven-3.5.2" />
+        <option name="userSettingsFile" value="C:\apache-maven-3.5.2\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
@@ -183,28 +209,6 @@
             <path>
               <item name="btp" type="b2602c69:ProjectViewProjectNode" />
               <item name="btpDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="btp.DBUtility" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="btp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="btpDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="btp.DBUtility" type="462c0819:PsiDirectoryNode" />
-              <item name="DBUtility" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="btp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="btpDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="btp.DBUtility" type="462c0819:PsiDirectoryNode" />
-              <item name="Mongodb" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="btp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="btpDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="Config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="btp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="btpDemo" type="462c0819:PsiDirectoryNode" />
               <item name="WebUI" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -223,7 +227,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -454,13 +458,6 @@
       <workItem from="1535972961936" duration="18508000" />
       <workItem from="1536047990069" duration="23437000" />
       <workItem from="1536494063653" duration="2271000" />
-    </task>
-    <task id="LOCAL-00008" summary="mybait的使用">
-      <created>1534586382085</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1534586382085</updated>
     </task>
     <task id="LOCAL-00009" summary="mybait的使用">
       <created>1534590579170</created>
@@ -798,7 +795,14 @@
       <option name="project" value="LOCAL" />
       <updated>1536572522975</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Dom4j的使用">
+      <created>1536578730583</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1536578730583</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -834,10 +838,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="215049000" />
+    <option name="totallyTimeSpent" value="221435000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.28958333" side_tool="true" weight="0.29303548" />
@@ -850,7 +855,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7104167" visible="true" weight="0.2522996" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7104167" weight="0.2522996" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.49707174" weight="0.3227345" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
@@ -860,9 +865,9 @@
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7590278" weight="0.43626806" />
       <window_info anchor="right" id="Mybatis datasource" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19166666" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19166666" />
       <window_info anchor="bottom" id="Run with VisualVM" order="15" weight="0.3290938" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.13769363" />
+      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.19842313" />
       <window_info id="Learn" order="6" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
@@ -1034,13 +1039,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/btp.Code/btpEntity/ListResultDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -1387,7 +1385,7 @@
     <entry file="file://$PROJECT_DIR$/Config/mongodb.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
@@ -1407,10 +1405,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/btp.DBUtility/Mongodb/MongodbUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="31" column="32" lean-forward="true" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+        <state relative-caret-position="57">
+          <caret line="20" column="102" lean-forward="true" selection-start-line="20" selection-start-column="102" selection-end-line="20" selection-end-column="102" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/btp.Code/btpEntity/ListResultDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding>
+            <element signature="e#427#428#0" expanded="true" />
+            <element signature="e#455#456#0" expanded="true" />
+            <element signature="e#494#495#0" expanded="true" />
+            <element signature="e#528#529#0" expanded="true" />
+            <element signature="e#564#565#0" expanded="true" />
+            <element signature="e#595#596#0" expanded="true" />
+            <element signature="e#644#645#0" expanded="true" />
+            <element signature="e#684#685#0" expanded="true" />
           </folding>
         </state>
       </provider>
