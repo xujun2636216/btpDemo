@@ -30,9 +30,10 @@
       <file leaf-file-name="_FutureTask.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Multithreading/ThreadOperation/_FutureTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+            <state relative-caret-position="240">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="e#305#314#0" expanded="true" />
               </folding>
             </state>
@@ -410,14 +411,7 @@
       <workItem from="1536047990069" duration="23437000" />
       <workItem from="1536494063653" duration="2271000" />
       <workItem from="1536890421765" duration="3226000" />
-      <workItem from="1537235298550" duration="2492000" />
-    </task>
-    <task id="LOCAL-00012" summary="mybait的使用">
-      <created>1534775654927</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1534775654928</updated>
+      <workItem from="1537235298550" duration="2551000" />
     </task>
     <task id="LOCAL-00013" summary="mybait的使用">
       <created>1534775707358</created>
@@ -755,7 +749,14 @@
       <option name="project" value="LOCAL" />
       <updated>1537241931912</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Dom4j的使用">
+      <created>1537241999958</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1537241999958</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -791,7 +792,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="232310000" />
+    <option name="totallyTimeSpent" value="232369000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -1297,9 +1298,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Multithreading/ThreadOperation/_FutureTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        <state relative-caret-position="240">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#305#314#0" expanded="true" />
           </folding>
         </state>

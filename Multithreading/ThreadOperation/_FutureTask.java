@@ -1,5 +1,7 @@
 package ThreadOperation;
 
+import Common.LogHelper;
+
 import java.util.concurrent.*;
 
 public class _FutureTask<I extends Number> {
@@ -17,10 +19,10 @@ public class _FutureTask<I extends Number> {
             Integer ret = futureTask.get();
         } catch (InterruptedException e) {
             executor.shutdown();
-            e.printStackTrace();
+            LogHelper.Error(e.getMessage(),e);
         } catch (ExecutionException e) {
             executor.shutdown();
-            e.printStackTrace();
+            LogHelper.Error(e.getMessage(),e);
         }
         executor.shutdown();
     }
