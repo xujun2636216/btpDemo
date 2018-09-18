@@ -6,12 +6,12 @@ import IBLL.IUserBLL;
 import btpEntity.User;
 import org.apache.ibatis.session.SqlSession;
 
+import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.List;
 
+@Transactional
 public class UserBLL implements IUserBLL {
-    // 获取Session连接
-    private static SqlSession session = MybatisDBUtilsHelper.getSession().openSession();
 
     //创建 SingleObject 的一个对象
     private static UserBLL instance = null;
@@ -26,11 +26,13 @@ public class UserBLL implements IUserBLL {
 
     @Override
     public List<User> GetUserList() {
+        final SqlSession session = MybatisDBUtilsHelper.getSession().openSession();
         List<User> userlist = new ArrayList<User>();
         try {
             IUserBLL userMapper = session.getMapper(IUserBLL.class);
             userlist = userMapper.GetUserList();
         } catch (Exception ex) {
+            session.rollback();
             LogHelper.Error(ex.getMessage(), ex);
         } finally {
             session.close();
@@ -40,12 +42,14 @@ public class UserBLL implements IUserBLL {
 
     @Override
     public void InsertUser(User user) {
+        final SqlSession session = MybatisDBUtilsHelper.getSession().openSession();
         try {
 
             IUserBLL userMapper = session.getMapper(IUserBLL.class);
             userMapper.InsertUser(user);
             session.commit();
         } catch (Exception ex) {
+            session.rollback();
             LogHelper.Error(ex.getMessage(), ex);
         } finally {
             session.close();
@@ -55,11 +59,13 @@ public class UserBLL implements IUserBLL {
 
     @Override
     public void UpdateUser(User user) {
+        final SqlSession session = MybatisDBUtilsHelper.getSession().openSession();
         try {
             IUserBLL userMapper = session.getMapper(IUserBLL.class);
             userMapper.UpdateUser(user);
             session.commit();
         } catch (Exception ex) {
+            session.rollback();
             LogHelper.Error(ex.getMessage(), ex);
         } finally {
             session.close();
@@ -68,12 +74,13 @@ public class UserBLL implements IUserBLL {
 
     @Override
     public void DeleteUser(int id) {
-
+        final SqlSession session = MybatisDBUtilsHelper.getSession().openSession();
         try {
             IUserBLL userMapper = session.getMapper(IUserBLL.class);
             userMapper.DeleteUser(id);
             session.commit();
         } catch (Exception ex) {
+            session.rollback();
             LogHelper.Error(ex.getMessage(), ex);
         } finally {
             session.close();
@@ -82,11 +89,13 @@ public class UserBLL implements IUserBLL {
 
     @Override
     public User GetUser(int id) {
+        final SqlSession session = MybatisDBUtilsHelper.getSession().openSession();
         User user = new User();
         try {
             IUserBLL userMapper = session.getMapper(IUserBLL.class);
             user = userMapper.GetUser(id);
         } catch (Exception ex) {
+            session.rollback();
             LogHelper.Error(ex.getMessage(), ex);
         } finally {
             session.close();
@@ -96,11 +105,13 @@ public class UserBLL implements IUserBLL {
 
     @Override
     public List<User> GetAllUserList(User user) {
+        final SqlSession session = MybatisDBUtilsHelper.getSession().openSession();
         List<User> userlist = new ArrayList<User>();
         try {
             IUserBLL userMapper = session.getMapper(IUserBLL.class);
             userlist = userMapper.GetAllUserList(user);
         } catch (Exception ex) {
+            session.rollback();
             LogHelper.Error(ex.getMessage(), ex);
         } finally {
             session.close();
