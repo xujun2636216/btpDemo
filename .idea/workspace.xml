@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="111058e0-084c-4b4c-b84a-4e52f0600b58" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Multithreading/ThreadOperation/_FutureTask.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Multithreading/ThreadOperation/FuturesandCallables.java" beforeDir="false" afterPath="$PROJECT_DIR$/Multithreading/ThreadOperation/FuturesandCallables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Multithreading/ThreadOperation/_FutureTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/Multithreading/ThreadOperation/_FutureTask.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,8 +30,8 @@
       <file leaf-file-name="_FutureTask.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Multithreading/ThreadOperation/_FutureTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+            <state relative-caret-position="48">
+              <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
               <folding>
                 <element signature="e#305#314#0" expanded="true" />
               </folding>
@@ -44,7 +43,7 @@
         <entry file="file://$PROJECT_DIR$/Multithreading/ThreadOperation/FuturesandCallables.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="304">
-              <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+              <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
               <folding>
                 <element signature="e#798#799#0" expanded="true" />
                 <element signature="e#873#874#0" expanded="true" />
@@ -176,17 +175,6 @@
             <path>
               <item name="btp" type="b2602c69:ProjectViewProjectNode" />
               <item name="btpDemo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="btp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="btpDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="Multithreading" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="btp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="btpDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="Multithreading" type="462c0819:PsiDirectoryNode" />
-              <item name="ThreadOperation" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -422,14 +410,7 @@
       <workItem from="1536047990069" duration="23437000" />
       <workItem from="1536494063653" duration="2271000" />
       <workItem from="1536890421765" duration="3226000" />
-      <workItem from="1537235298550" duration="2399000" />
-    </task>
-    <task id="LOCAL-00011" summary="mybait的使用">
-      <created>1534643947448</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1534643947448</updated>
+      <workItem from="1537235298550" duration="2492000" />
     </task>
     <task id="LOCAL-00012" summary="mybait的使用">
       <created>1534775654927</created>
@@ -767,7 +748,14 @@
       <option name="project" value="LOCAL" />
       <updated>1537233103739</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="Dom4j的使用">
+      <created>1537241931912</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1537241931912</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -803,7 +791,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="232217000" />
+    <option name="totallyTimeSpent" value="232310000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -1299,7 +1287,7 @@
     <entry file="file://$PROJECT_DIR$/Multithreading/ThreadOperation/FuturesandCallables.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
-          <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+          <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
           <folding>
             <element signature="e#798#799#0" expanded="true" />
             <element signature="e#873#874#0" expanded="true" />
@@ -1309,8 +1297,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Multithreading/ThreadOperation/_FutureTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+        <state relative-caret-position="48">
+          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
           <folding>
             <element signature="e#305#314#0" expanded="true" />
           </folding>

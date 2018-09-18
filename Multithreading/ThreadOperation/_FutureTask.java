@@ -4,6 +4,9 @@ import java.util.concurrent.*;
 
 public class _FutureTask<I extends Number> {
 
+    /**
+     * 多线程并行异步操作(FutureTask)
+     */
     public static void main(String[] args) {
 
         ExecutorService executor = Executors.newFixedThreadPool(10);
