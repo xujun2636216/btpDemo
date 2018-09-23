@@ -175,7 +175,7 @@ public class StreamApiController {
     public void Test9() {
 
         //int类型的计算
-        Integer sum = GetList().stream().map(p->p.getAge()).reduce(0, (x, y) -> x + y);
+        Integer sum = GetList().stream().map((p)->p.getAge()).reduce(0, (x, y) -> x + y);
         System.out.println(sum);
 
         //double类型的计算
