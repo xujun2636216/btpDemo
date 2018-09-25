@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="111058e0-084c-4b4c-b84a-4e52f0600b58" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Multithreading/ThreadOperation/_FutureTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/Multithreading/ThreadOperation/_FutureTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/btp.Basic/Common/ExcelUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/btp.Basic/Common/ExcelUtils.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,17 +27,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_FutureTask.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_FutureTask.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Multithreading/ThreadOperation/_FutureTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="368">
+              <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#305#314#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExcelUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/btp.Basic/Common/ExcelUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Base64Util.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/btp.Basic/Common/Base64Util.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AssembleUtil.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/btp.Basic/Common/AssembleUtil.java">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="FuturesandCallables.java" pinned="false" current-in-tab="false">
@@ -99,7 +121,6 @@
         <option value="$PROJECT_DIR$/WebUI/Controllers/MybatisController.java" />
         <option value="$PROJECT_DIR$/btp.Basic/Common/ExeclUtil.java" />
         <option value="$PROJECT_DIR$/btp.Basic/Common/ExcelUtil.java" />
-        <option value="$PROJECT_DIR$/btp.Basic/Common/ExcelUtils.java" />
         <option value="$PROJECT_DIR$/Config/log4j.properties" />
         <option value="$PROJECT_DIR$/btp.DBUtility/DBUtility/MybatisDBUtilsHelper.java" />
         <option value="$PROJECT_DIR$/btp.Code/btpEntity/ResultDTO.java" />
@@ -136,6 +157,7 @@
         <option value="$PROJECT_DIR$/Multithreading/ThreadOperation/FuturesandCallables.java" />
         <option value="$PROJECT_DIR$/Multithreading/ThreadOperation/FutureTask.java" />
         <option value="$PROJECT_DIR$/Multithreading/ThreadOperation/_FutureTask.java" />
+        <option value="$PROJECT_DIR$/btp.Basic/Common/ExcelUtils.java" />
       </list>
     </option>
   </component>
@@ -169,7 +191,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -177,17 +199,28 @@
               <item name="btp" type="b2602c69:ProjectViewProjectNode" />
               <item name="btpDemo" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="btp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="btpDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="btp.Basic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="btp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="btpDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="btp.Basic" type="462c0819:PsiDirectoryNode" />
+              <item name="Common" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/mongo-java-driver-3.8.1.jar!/" />
+    <property name="last_opened_file_path" value="D:/ExcelReportHandle-master" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -412,6 +445,7 @@
       <workItem from="1536494063653" duration="2271000" />
       <workItem from="1536890421765" duration="3226000" />
       <workItem from="1537235298550" duration="2551000" />
+      <workItem from="1537441686016" duration="643000" />
     </task>
     <task id="LOCAL-00013" summary="mybait的使用">
       <created>1534775707358</created>
@@ -792,7 +826,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="232369000" />
+    <option name="totallyTimeSpent" value="234949000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -806,14 +840,12 @@
       <window_info id="Capture Tool" order="4" />
       <window_info id="Designer" order="2" />
       <window_info anchor="bottom" id="Tail" order="12" />
-      <window_info anchor="bottom" id="Inspection Results" order="13" sideWeight="0.5555556" weight="0.18002628" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7104167" weight="0.25098553" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.49707174" weight="0.3227345" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
@@ -821,16 +853,18 @@
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7590278" weight="0.43561208" />
       <window_info anchor="right" id="Mybatis datasource" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19097222" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18333334" />
       <window_info anchor="bottom" id="Run with VisualVM" order="15" weight="0.3290938" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.13666229" />
       <window_info id="Learn" order="6" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Debug with VisualVM" order="16" sideWeight="0.49926794" weight="0.52305245" />
+      <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.49707174" weight="0.3227345" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.13666229" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection Results" order="13" sideWeight="0.5555556" weight="0.18002628" />
       <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.3298611" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -932,27 +966,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/btp.DBUtility/DBUtility/SQLHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="87" column="47" lean-forward="true" selection-start-line="87" selection-start-column="47" selection-end-line="87" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/junit-4.8.2.jar!/org/junit/runners/model/FrameworkMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/junit-4.8.2.jar!/org/junit/runners/ParentRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="102" selection-start-line="102" selection-end-line="102" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebUI/Controllers/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -1247,9 +1260,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2688">
           <caret line="179" column="41" selection-start-line="179" selection-start-column="41" selection-end-line="179" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1257,10 +1267,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
           <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-          <folding>
-            <element signature="e#742#748#0" expanded="true" />
-            <element signature="e#3189#3195#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1298,14 +1304,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Multithreading/ThreadOperation/_FutureTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="368">
+          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#305#314#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/btp.Basic/Common/ExcelUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/btp.Basic/Common/Base64Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/btp.Basic/Common/AssembleUtil.java">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
