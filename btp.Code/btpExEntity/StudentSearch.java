@@ -11,7 +11,8 @@ public class StudentSearch {
     public StudentSearch() {
     }
 
-    public StudentSearch(int age, String name, String phone) {
+    public StudentSearch(int id, int age, String name, String phone) {
+        this.id = id;
         this.age = age;
         this.name = name;
         this.phone = phone;
