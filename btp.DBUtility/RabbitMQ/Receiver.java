@@ -10,10 +10,11 @@ import com.rabbitmq.client.Consumer;
 import com.rabbitmq.client.ShutdownSignalException;
 
 
-public class Receiver extends BaseConnector implements Runnable,Consumer {
+public class Receiver extends BaseConnector implements Runnable, Consumer {
 
 
-    public Receiver(String queueName) throws IOException {
+    public
+    Receiver(String queueName) throws IOException {
         super(queueName);
     }
 
@@ -21,7 +22,7 @@ public class Receiver extends BaseConnector implements Runnable,Consumer {
     public void run() {
 
         try {
-            String str= channel.basicConsume(queueName, true, this);
+            String str = channel.basicConsume(queueName, true, this);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -57,7 +58,6 @@ public class Receiver extends BaseConnector implements Runnable,Consumer {
 
         MessageInfo messageInfo = (MessageInfo) SerializationUtils.deserialize(body);
     }
-
 
 
 
