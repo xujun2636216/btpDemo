@@ -4,18 +4,8 @@
     <option name="GROUP_BY_SEVERITY" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="111058e0-084c-4b4c-b84a-4e52f0600b58" name="Default" comment="Dom4j的使用">
-      <change afterPath="$PROJECT_DIR$/DeleteandEvent/Event.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DeleteandEvent/EventHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DeleteandEvent/EventMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DeleteandEvent/GoodNotifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DeleteandEvent/Notifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DeleteandEvent/PlayingGameListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DeleteandEvent/WatchingTVListener.java" afterDir="false" />
+    <list default="true" id="111058e0-084c-4b4c-b84a-4e52f0600b58" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebUI/Controllers/RabbitmqController.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebUI/Controllers/RabbitmqController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/btp.DBUtility/RabbitMQ/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/btp.DBUtility/RabbitMQ/Receiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/demo.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -504,14 +494,7 @@
       <workItem from="1537969870167" duration="1268000" />
       <workItem from="1537971320241" duration="354000" />
       <workItem from="1538093108662" duration="2372000" />
-      <workItem from="1538107835983" duration="6206000" />
-    </task>
-    <task id="LOCAL-00014" summary="mybait的使用">
-      <created>1535164703920</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1535164703920</updated>
+      <workItem from="1538107835983" duration="6814000" />
     </task>
     <task id="LOCAL-00015" summary="mybait的使用">
       <created>1535165400637</created>
@@ -849,7 +832,14 @@
       <option name="project" value="LOCAL" />
       <updated>1537971496226</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="Dom4j的使用">
+      <created>1538120686557</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1538120686557</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -885,7 +875,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="245149000" />
+    <option name="totallyTimeSpent" value="245757000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
