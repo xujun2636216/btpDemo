@@ -6,6 +6,9 @@ import org.apache.commons.lang.SerializationUtils;
 import java.io.IOException;
 import java.io.Serializable;
 
+/**
+ * @author Administrator
+ */
 public class Sender extends BaseConnector {
 
     public Sender(String queueName) throws IOException {

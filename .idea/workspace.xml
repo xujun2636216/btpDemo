@@ -4,7 +4,13 @@
     <option name="GROUP_BY_SEVERITY" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="111058e0-084c-4b4c-b84a-4e52f0600b58" name="Default" comment="" />
+    <list default="true" id="111058e0-084c-4b4c-b84a-4e52f0600b58" name="Default" comment="Dom4j的使用">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUI/Controllers/RabbitmqController.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebUI/Controllers/RabbitmqController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/btp.Code/btpEntity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/btp.Code/btpEntity/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/btp.DBUtility/RabbitMQ/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/btp.DBUtility/RabbitMQ/Receiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/btp.DBUtility/RabbitMQ/Sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/btp.DBUtility/RabbitMQ/Sender.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,11 +30,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_FutureTask.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Multithreading/ThreadOperation/_FutureTask.java">
+      <file leaf-file-name="MybatisController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebUI/Controllers/MybatisController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+            <state relative-caret-position="-464">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RedisController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebUI/Controllers/RedisController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="464">
+              <caret line="29" column="49" lean-forward="true" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -36,38 +51,84 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExcelUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/btp.Basic/Common/ExcelUtils.java">
+      <file leaf-file-name="StreamApiController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebUI/Controllers/StreamApiController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="480">
+              <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Base64Util.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/btp.Basic/Common/Base64Util.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AssembleUtil.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/btp.Basic/Common/AssembleUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="25" column="21" lean-forward="true" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FuturesandCallables.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Multithreading/ThreadOperation/FuturesandCallables.java">
+      <file leaf-file-name="RabbitmqController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebUI/Controllers/RabbitmqController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="304">
-              <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Receiver.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/btp.DBUtility/RabbitMQ/Receiver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="560">
+              <caret line="35" column="42" lean-forward="true" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#742#743#0" expanded="true" />
+                <element signature="e#819#820#0" expanded="true" />
+                <element signature="e#903#904#0" expanded="true" />
+                <element signature="e#1131#1132#0" expanded="true" />
+                <element signature="e#1175#1176#0" expanded="true" />
+                <element signature="e#1234#1235#0" expanded="true" />
+                <element signature="e#1261#1262#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Channel.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/amqp-client-5.3.0.jar!/com/rabbitmq/client/Channel.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="148">
+              <caret line="149" column="11" selection-start-line="149" selection-start-column="11" selection-end-line="149" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Consumer.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/amqp-client-5.3.0.jar!/com/rabbitmq/client/Consumer.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseConnector.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/btp.DBUtility/RabbitMQ/BaseConnector.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Student.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/btp.Code/btpEntity/Student.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sender.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/btp.DBUtility/RabbitMQ/Sender.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -104,9 +165,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/btp.Job/Job/JobHelper.java" />
-        <option value="$PROJECT_DIR$/Multithreading/ThreadOperation/ForkJoin.java" />
-        <option value="$PROJECT_DIR$/btp.Job/Job/BTPPreloadJob.java" />
         <option value="$PROJECT_DIR$/btp.Job/CommonJob/BTPPreloadJob.java" />
         <option value="$PROJECT_DIR$/Multithreading/ThreadOperation/JavaFuture.java" />
         <option value="$PROJECT_DIR$/Multithreading/ThreadOperation/CompletableFuture.java" />
@@ -115,7 +173,6 @@
         <option value="$PROJECT_DIR$/btp.Basic/Common/MapHelper.java" />
         <option value="$PROJECT_DIR$/btp.Basic/Common/Dom4jHelper.java" />
         <option value="$PROJECT_DIR$/Config/ehcache.xml" />
-        <option value="$PROJECT_DIR$/WebUI/Controllers/MybatisController.java" />
         <option value="$PROJECT_DIR$/btp.Basic/Common/ExeclUtil.java" />
         <option value="$PROJECT_DIR$/btp.Basic/Common/ExcelUtil.java" />
         <option value="$PROJECT_DIR$/Config/log4j.properties" />
@@ -126,7 +183,6 @@
         <option value="$PROJECT_DIR$/WebUI/Controllers/StudentController.java" />
         <option value="$PROJECT_DIR$/WebUI/Controllers/DBUtilsController.java" />
         <option value="$PROJECT_DIR$/btp.BLL/BLL/StudentBLL.java" />
-        <option value="$PROJECT_DIR$/WebUI/Controllers/RabbitmqController.java" />
         <option value="$PROJECT_DIR$/btp.Basic/RabbitMQ/Receiver.java" />
         <option value="$PROJECT_DIR$/btp.Basic/RabbitMQ/BaseConnector.java" />
         <option value="$PROJECT_DIR$/WebUI/Controllers/HomeController.java" />
@@ -135,11 +191,9 @@
         <option value="$PROJECT_DIR$/btp.DBUtility/DBUtility/HibernateHelper.java" />
         <option value="$PROJECT_DIR$/btp.DBUtility/DBUtility/HibernateUtils.java" />
         <option value="$PROJECT_DIR$/btp.Code/btpXml/Student.hbm.xml" />
-        <option value="$PROJECT_DIR$/btp.Code/btpEntity/Student.java" />
         <option value="$PROJECT_DIR$/btp.Code/btpExEntity/StudentSearchDTO.java" />
         <option value="$PROJECT_DIR$/WebUI/Controllers/HibernateController.java" />
         <option value="$PROJECT_DIR$/btp.Code/btpXml/StudentSearch.hbm.xml" />
-        <option value="$PROJECT_DIR$/btp.Code/btpExEntity/StudentSearch.java" />
         <option value="$PROJECT_DIR$/Config/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/btp.BLL/BLL/StudentsBLL.java" />
         <option value="$PROJECT_DIR$/WebUI/Controllers/XmlController.java" />
@@ -155,11 +209,24 @@
         <option value="$PROJECT_DIR$/Multithreading/ThreadOperation/FutureTask.java" />
         <option value="$PROJECT_DIR$/Multithreading/ThreadOperation/_FutureTask.java" />
         <option value="$PROJECT_DIR$/btp.Basic/Common/ExcelUtils.java" />
+        <option value="$PROJECT_DIR$/WebUI/Controllers/MybatisController.java" />
+        <option value="$PROJECT_DIR$/btp.Code/btpExEntity/StudentSearch.java" />
+        <option value="$PROJECT_DIR$/Multithreading/ThreadOperation/ForkJoin.java" />
+        <option value="$PROJECT_DIR$/btp.Code/btpEntity/Student.java" />
+        <option value="$PROJECT_DIR$/btp.DBUtility/RabbitMQ/Sender.java" />
+        <option value="$PROJECT_DIR$/WebUI/Controllers/RabbitmqController.java" />
+        <option value="$PROJECT_DIR$/btp.DBUtility/RabbitMQ/Receiver.java" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
@@ -187,9 +254,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -200,18 +264,32 @@
             <path>
               <item name="btp" type="b2602c69:ProjectViewProjectNode" />
               <item name="btpDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="btp.Basic" type="462c0819:PsiDirectoryNode" />
+              <item name="btp.DBUtility" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="btp" type="b2602c69:ProjectViewProjectNode" />
               <item name="btpDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="btp.Basic" type="462c0819:PsiDirectoryNode" />
-              <item name="Common" type="462c0819:PsiDirectoryNode" />
+              <item name="btp.DBUtility" type="462c0819:PsiDirectoryNode" />
+              <item name="RabbitMQ" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="btp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="btpDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="WebUI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="btp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="btpDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="WebUI" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -221,7 +299,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -246,7 +324,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.FuturesandCallables">
+  <component name="RunManager" selected="JUnit.RabbitmqController.geetreceiver">
     <configuration name="Dom4jController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Controllers.Dom4jController" />
       <module name="demo" />
@@ -272,10 +350,21 @@
         <option name="visualVMId" value="351935601344964" />
       </RunnerSettings>
     </configuration>
+    <configuration name="RabbitmqController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Controllers.RabbitmqController" />
+      <module name="demo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Controllers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="HibernateController.SearchgetStudentList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RabbitmqController.geetreceiver" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
         <pattern>
@@ -286,31 +375,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="Controllers" />
-      <option name="MAIN_CLASS_NAME" value="Controllers.HibernateController" />
-      <option name="METHOD_NAME" value="SearchgetStudentList" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="HibernateController.Searchlist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="Controllers" />
-      <option name="MAIN_CLASS_NAME" value="Controllers.HibernateController" />
-      <option name="METHOD_NAME" value="Searchlist" />
+      <option name="MAIN_CLASS_NAME" value="Controllers.RabbitmqController" />
+      <option name="METHOD_NAME" value="geetreceiver" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -383,19 +449,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.HibernateController.SearchgetStudentList" />
-      <item itemvalue="JUnit.HibernateController.Searchlist" />
       <item itemvalue="Application.Dom4jController" />
       <item itemvalue="JUnit.RedisController.setHash1" />
       <item itemvalue="Application.FuturesandCallables" />
+      <item itemvalue="Application.RabbitmqController" />
+      <item itemvalue="JUnit.RabbitmqController.geetreceiver" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RabbitmqController.geetreceiver" />
+        <item itemvalue="Application.RabbitmqController" />
         <item itemvalue="Application.FuturesandCallables" />
         <item itemvalue="JUnit.RedisController.setHash1" />
         <item itemvalue="Application.Dom4jController" />
-        <item itemvalue="JUnit.HibernateController.Searchlist" />
-        <item itemvalue="JUnit.HibernateController.SearchgetStudentList" />
       </list>
     </recent_temporary>
   </component>
@@ -444,13 +510,8 @@
       <workItem from="1537235298550" duration="2551000" />
       <workItem from="1537441686016" duration="643000" />
       <workItem from="1537969870167" duration="1268000" />
-    </task>
-    <task id="LOCAL-00013" summary="mybait的使用">
-      <created>1534775707358</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1534775707358</updated>
+      <workItem from="1537971320241" duration="354000" />
+      <workItem from="1538093108662" duration="2372000" />
     </task>
     <task id="LOCAL-00014" summary="mybait的使用">
       <created>1535164703920</created>
@@ -788,19 +849,17 @@
       <option name="project" value="LOCAL" />
       <updated>1537241999958</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Dom4j的使用">
+      <created>1537971496224</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1537971496226</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HibernateController_SearchgetStudentList - 2018.09.04 at 19h 39m 46s.xml">
-      <configuration name="HibernateController.SearchgetStudentList" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HibernateController_SearchgetStudentList - 2018.09.04 at 19h 40m 11s.xml">
-      <configuration name="HibernateController.SearchgetStudentList" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HibernateController_Searchlist - 2018.09.04 at 19h 50m 48s.xml">
-      <configuration name="HibernateController.Searchlist" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="HibernateController_Searchlist - 2018.09.04 at 19h 52m 15s.xml">
       <configuration name="HibernateController.Searchlist" configurationId="JUnit" />
     </history-entry>
@@ -822,9 +881,18 @@
     <history-entry file="RedisController_setHash1 - 2018.09.09 at 20h 23m 05s.xml">
       <configuration name="RedisController.setHash1" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="RabbitmqController_geetreceiver - 2018.09.28 at 08h 37m 07s.xml">
+      <configuration name="RabbitmqController.geetreceiver" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RabbitmqController_geetreceiver - 2018.09.28 at 08h 39m 36s.xml">
+      <configuration name="RabbitmqController.geetreceiver" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RabbitmqController_geetreceiver - 2018.09.28 at 08h 41m 59s.xml">
+      <configuration name="RabbitmqController.geetreceiver" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="236217000" />
+    <option name="totallyTimeSpent" value="238943000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -840,22 +908,22 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7104167" weight="0.25098553" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.7104167" visible="true" weight="0.24960254" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.49707174" weight="0.3227345" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.051248357" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7590278" weight="0.43561208" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7590278" weight="0.17170112" />
       <window_info anchor="right" id="Mybatis datasource" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1830161" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1830161" />
       <window_info anchor="bottom" id="Run with VisualVM" order="15" weight="0.3290938" />
       <window_info id="Learn" order="6" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Debug with VisualVM" order="16" sideWeight="0.49926794" weight="0.52305245" />
-      <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.49707174" weight="0.3227345" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.13666229" />
@@ -881,36 +949,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/WebUI/Controllers/Dom4jController.java</url>
-          <line>33</line>
-          <properties />
-          <option name="timeStamp" value="188" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/WebUI/Controllers/RedisController.java</url>
-          <line>19</line>
-          <properties />
-          <option name="timeStamp" value="212" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/btp.DBUtility/Redis/RedisClient.java</url>
-          <line>16</line>
-          <properties />
-          <option name="timeStamp" value="215" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Multithreading/ThreadOperation/FuturesandCallables.java</url>
-          <line>8</line>
-          <properties />
-          <option name="timeStamp" value="216" />
-        </line-breakpoint>
-      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="217" />
+      <option name="time" value="232" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -963,108 +1005,10 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/WebUI/Controllers/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/util/function/Consumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/junit-4.8.2.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/junit-4.8.2.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="49" column="87" selection-start-line="49" selection-start-column="87" selection-end-line="49" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/btp.Code/btpEntity/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" column="19" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/btp.Basic/Common/ConvertHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-826">
-          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebUI/Controllers/HibernateController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="31" column="53" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebUI/Controllers/MailController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebUI/Controllers/Log4jController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebUI/Controllers/XmlController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="124" column="24" selection-start-line="116" selection-start-column="11" selection-end-line="124" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/btp.Basic/Common/XMLHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3750">
-          <caret line="55" column="32" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebUI/Controllers/Dom4jController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="60" column="1" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/btp.Basic/Common/Dom4jHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="33" column="17" lean-forward="true" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/btp.BLL/IBLL/IUserBLL.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebUI/Controllers/MybatisController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
         </state>
       </provider>
     </entry>
@@ -1086,17 +1030,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
           <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/btp.DBUtility/RabbitMQ/BaseConnector.java" />
-    <entry file="file://$PROJECT_DIR$/WebUI/Controllers/RedisController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="29" column="49" lean-forward="true" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1157,13 +1090,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/btp.Code/btpExEntity/StudentSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Config/hibernate.cfg.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
@@ -1207,41 +1133,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Multithreading/ThreadOperation/ForkJoin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Multithreading/ThreadOperation/CompletableFutureuser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="19" column="46" lean-forward="true" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/util/concurrent/ExecutorService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="236" column="18" selection-start-line="236" selection-start-column="18" selection-end-line="236" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Multithreading/ThreadOperation/FuturesandCallables.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Multithreading/ThreadOperation/_FutureTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1262,7 +1157,170 @@
     <entry file="file://$PROJECT_DIR$/btp.Basic/Common/AssembleUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
-          <caret line="25" column="21" lean-forward="true" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+          <caret line="47" column="7" lean-forward="true" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/btp.Code/btpEntity/Cores.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/btp.Code/btpExEntity/StudentSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Multithreading/ThreadOperation/_FutureTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Multithreading/ThreadOperation/FuturesandCallables.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Multithreading/ThreadOperation/CompletableFutureuser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Multithreading/ThreadOperation/ForkJoin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebUI/Controllers/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-384">
+          <caret line="32" column="17" lean-forward="true" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebUI/Controllers/JobController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebUI/Controllers/JsonController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebUI/Controllers/Log4jController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebUI/Controllers/MailController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebUI/Controllers/MybatisController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-464">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebUI/Controllers/RedisController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="29" column="49" lean-forward="true" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebUI/Controllers/StreamApiController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/btp.Code/btpEntity/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/btp.DBUtility/RabbitMQ/BaseConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/btp.DBUtility/RabbitMQ/Sender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/amqp-client-5.3.0.jar!/com/rabbitmq/client/Consumer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/amqp-client-5.3.0.jar!/com/rabbitmq/client/Channel.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="149" column="11" selection-start-line="149" selection-start-column="11" selection-end-line="149" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebUI/Controllers/RabbitmqController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/btp.DBUtility/RabbitMQ/Receiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="35" column="42" lean-forward="true" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#742#743#0" expanded="true" />
+            <element signature="e#819#820#0" expanded="true" />
+            <element signature="e#903#904#0" expanded="true" />
+            <element signature="e#1131#1132#0" expanded="true" />
+            <element signature="e#1175#1176#0" expanded="true" />
+            <element signature="e#1234#1235#0" expanded="true" />
+            <element signature="e#1261#1262#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

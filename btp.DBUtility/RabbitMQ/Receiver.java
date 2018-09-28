@@ -21,38 +21,44 @@ public class Receiver extends BaseConnector implements Runnable,Consumer {
     public void run() {
 
         try {
-            channel.basicConsume(queueName, true, this);
+            String str= channel.basicConsume(queueName, true, this);
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    /**
-     * 下面这些方法都是实现Consumer接口的
-     **/
-    //当消费者注册完成自动调用
+    @Override
     public void handleConsumeOk(String consumerTag) {
         System.out.println("Consumer " + consumerTag + " registered");
     }
 
-    //当消费者接收到消息会自动调用
-    public void handleDelivery(String consumerTag, Envelope env, BasicProperties props, byte[] body) throws IOException {
-         MessageInfo messageInfo = (MessageInfo) SerializationUtils.deserialize(body);
-
+    @Override
+    public void handleCancelOk(String s) {
+         String message=s.toString();
     }
 
-    //下面这些方法可以暂时不用理会
-    public void handleCancelOk(String consumerTag) {
+    @Override
+    public void handleCancel(String s) throws IOException {
+         String message=s.toString();
     }
 
-    public void handleCancel(String consumerTag) throws IOException {
+    @Override
+    public void handleShutdownSignal(String s, ShutdownSignalException e) {
+         String message=s.toString();
     }
 
-    public void handleShutdownSignal(String consumerTag, ShutdownSignalException sig) {
+    @Override
+    public void handleRecoverOk(String s) {
+        String message = s.toString();
     }
 
-    public void handleRecoverOk(String consumerTag) {
+    @Override
+    public void handleDelivery(String s, Envelope envelope, BasicProperties basicProperties, byte[] body) throws IOException {
+
+        MessageInfo messageInfo = (MessageInfo) SerializationUtils.deserialize(body);
     }
+
+
 
 
 
