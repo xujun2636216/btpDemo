@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="111058e0-084c-4b4c-b84a-4e52f0600b58" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/WebUI/Controllers/StringController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebUI/Controllers/StringController.java" beforeDir="false" afterPath="$PROJECT_DIR$/WebUI/Controllers/StringController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,8 +30,8 @@
       <file leaf-file-name="StringController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WebUI/Controllers/StringController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+            <state relative-caret-position="128">
+              <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -147,10 +148,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1401" />
-    <option name="height" value="822" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1404" />
+    <option name="height" value="825" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -164,17 +165,6 @@
               <item name="btp" type="b2602c69:ProjectViewProjectNode" />
               <item name="btpDemo" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="btp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="btpDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="WebUI" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="btp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="btpDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="WebUI" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -187,7 +177,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SpringMvc/DZK" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -399,14 +389,7 @@
       <workItem from="1537971320241" duration="354000" />
       <workItem from="1538093108662" duration="2372000" />
       <workItem from="1538107835983" duration="15225000" />
-      <workItem from="1539063117608" duration="425000" />
-    </task>
-    <task id="LOCAL-00016" summary="mybait的使用">
-      <created>1535171266473</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1535171266474</updated>
+      <workItem from="1539063117608" duration="5619000" />
     </task>
     <task id="LOCAL-00017" summary="mybait的使用">
       <created>1535171414504</created>
@@ -744,7 +727,14 @@
       <option name="project" value="LOCAL" />
       <updated>1538124329977</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="Dom4j的使用">
+      <created>1539063639006</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1539063639007</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -780,7 +770,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="254593000" />
+    <option name="totallyTimeSpent" value="259787000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -930,14 +920,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/btp.Code/btpEntity/ListResultDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/btp.DBUtility/Redis/RedisClient.java" />
     <entry file="file://$PROJECT_DIR$/btp.DBUtility/DBUtility/HibernateHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
@@ -1132,6 +1114,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="29" column="49" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1195,6 +1180,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
           <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1306,10 +1294,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="2903" column="68" lean-forward="true" selection-start-line="2903" selection-start-column="68" selection-end-line="2903" selection-end-column="68" />
+          <folding>
+            <element signature="e#116079#116080#0" expanded="true" />
+            <element signature="e#116121#116122#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/jshell/jshell_console.snippet">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/WebUI/Controllers/StringController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+        <state relative-caret-position="128">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
         </state>
       </provider>
     </entry>
