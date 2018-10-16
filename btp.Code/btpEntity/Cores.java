@@ -2,11 +2,23 @@ package btpEntity;
 
 import java.io.Serializable;
 
+/**
+ * @author xujun
+ */
 public class Cores implements Serializable {
     private int id;
     private int userid;
     private int score;
     private User user;
+
+    public Cores() {}
+
+    public Cores(int id, int userid, int score, User user) {
+        this.id = id;
+        this.userid = userid;
+        this.score = score;
+        this.user = user;
+    }
 
     public int getId() {
         return id;
